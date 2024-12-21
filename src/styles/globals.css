@@ -1,0 +1,56 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+.buttonshine {
+  position: relative;
+  overflow: hidden; /* Ensures shine effect stays within the button */
+}
+
+.buttonshine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150px; /* Start shine effect outside the button */
+  width: 100px; /* Width of the shine effect */
+  height: 100%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.908) 50%,
+    rgba(255, 255, 255, 0) 70%
+  );
+
+  opacity: 0.6;
+  transform: skewX(-20deg); /* Add a diagonal shine */
+  animation: shine 1.5s ease-out infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -150px; /* Start outside */
+  }
+  100% {
+    left: 100%; /* Move completely across */
+  }
+}
