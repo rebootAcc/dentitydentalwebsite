@@ -34,10 +34,11 @@ export default function NavBar() {
     { name: "Our Facilities", link: "/ourchamber" },
     {
       name: "Our Clinics",
-      dropdownItems: Facilities.map((item) => ({
-        name: item.label,
-        link: item.href,
-      })),
+      dropdownItems: [
+        { name: "Dentity Dental Dumdum", link: "" },
+        { name: "Dentity Dental Sonarpur", link: "" },
+        { name: "Dentity Dental Gariahat", link: "" },
+      ],
     },
 
     { name: "Media", link: "/gallery" },
@@ -63,10 +64,14 @@ export default function NavBar() {
     };
   }, []);
 
+  const getGridColumnsClass = (items) => {
+    return items.length >= 30 ? "grid-cols-5 w-full" : "grid-cols-1 w-fit";
+  };
+
   return (
     <>
       <div className="fixed top-0 bg-white z-[60] w-full">
-        <div className="hidden lg:flex justify-between items-center sm:gap-2 lg:gap-0 flex-row p-3 lg:px-8">
+        <div className="hidden lg:flex justify-between  items-center sm:gap-2 z-[50] lg:gap-0 flex-row p-3 lg:px-8">
           <Link href={"/"} className="">
             <Image
               src="/images/logo.svg"
@@ -149,7 +154,7 @@ export default function NavBar() {
         }`}
       >
         <div
-          className="lg:flex hidden shadow-custom justify-center lg:gap-6 gap-5 xlg:gap-10 relative"
+          className="lg:flex hidden shadow-custom z-[100] justify-center lg:gap-6 gap-5 xlg:gap-10 relative"
           onMouseLeave={() => {
             setDropdownStates(false);
           }}
@@ -169,13 +174,17 @@ export default function NavBar() {
                     <div>{navbar.name} </div>
                   </button>
                   {dropdownStates[index] && (
-                    <div className="absolute top-8 mt-1 p-2 z-50 left-1/2 -translate-x-1/2 w-full">
-                      <div className="flex flex-wrap bg-white/90 gap-10">
+                    <div className="absolute top-10 px-4  z-50 left-1/2 flex justify-center items-center -translate-x-1/2 w-full">
+                      <div
+                        className={`grid bg-white/90 gap-2 ${getGridColumnsClass(
+                          navbar.dropdownItems
+                        )}`}
+                      >
                         {navbar.dropdownItems.map((item, i) => (
                           <Link
                             key={i}
                             href={item.link}
-                            className="flex py-2 px-4 text-site-typo hover:text-site-main hover:bg-gray-200 basis-1/12"
+                            className="flex p-1 xlg:p-2 text-xs xlg:text-sm text-site-typo hover:text-site-main hover:bg-gray-200 basis-1/12"
                           >
                             {item.name}
                           </Link>
