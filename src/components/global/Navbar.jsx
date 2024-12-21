@@ -66,7 +66,7 @@ export default function NavBar() {
   return (
     <>
       <div className="fixed top-0 bg-white z-[60] w-full">
-        <div className="hidden md:flex justify-between items-center sm:gap-2 lg:gap-0 flex-row p-3 lg:px-8">
+        <div className="hidden lg:flex justify-between items-center sm:gap-2 lg:gap-0 flex-row p-3 lg:px-8">
           <Link href={"/"} className="">
             <Image
               src="/images/logo.svg"
@@ -144,12 +144,12 @@ export default function NavBar() {
         </div>
       </div>
       <header
-        className={`bg-white fixed top-0 md:top-[3.5rem] lg:top-[4rem] z-50 w-full ${
+        className={`bg-white fixed top-0 lg:top-[4rem] z-50 w-full ${
           scrolled ? " " : ""
         }`}
       >
         <div
-          className="md:flex hidden shadow-custom justify-center lg:gap-6 gap-5 xlg:gap-10 relative"
+          className="lg:flex hidden shadow-custom justify-center lg:gap-6 gap-5 xlg:gap-10 relative"
           onMouseLeave={() => {
             setDropdownStates(false);
           }}
@@ -190,8 +190,8 @@ export default function NavBar() {
             </div>
           ))}
         </div>
-        <div className="flex justify-between items-center w-full md:p-3 p-2 px-9 md:hidden">
-          <Link href={"/"} className="md:hidden">
+        <div className="flex justify-between items-center w-full md:p-3 p-2 px-9 lg:hidden">
+          <Link href={"/"} className="lg:hidden">
             <Image
               src="/images/logo.svg"
               alt=""
@@ -209,7 +209,7 @@ export default function NavBar() {
           </button>
         </div>
         {menuopen && (
-          <div className="flex bg-site-main flex-col h-[50vh] md:h-[40vh] md:text-3xl text-xl overflow-scroll md:hidden px-9 relative">
+          <div className="flex bg-site-main flex-col h-[50vh] md:h-[40vh] lg:text-3xl text-xl overflow-scroll lg:hidden px-9 relative">
             {NavElement.map((navbar, index) => (
               <div
                 key={index}
@@ -229,7 +229,7 @@ export default function NavBar() {
                     </button>
                     <div className="w-full flex items-center justify-center z-50 relative top-0 ">
                       {dropdownStates[index] && (
-                        <div className="relative bg-transparent rounded-lg shadow-md mt-1 p-2 w-full transition-opacity border-gray-200 text-white opacity-100">
+                        <div className="relative bg-transparent rounded-lg mt-1 p-2 w-full transition-opacity border-gray-200 text-white opacity-100">
                           {navbar.dropdownItems.map((item, i) => (
                             <Link
                               key={i}
