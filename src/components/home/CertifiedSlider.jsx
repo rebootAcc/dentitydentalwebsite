@@ -7,7 +7,7 @@ const Slider = dynamic(() => import("react-slick"), {
 });
 
 export default function CertifiedSlider() {
-  const [slidesToShow, setSlidesToShow] = useState(5);
+  const [slidesToShow, setSlidesToShow] = useState(4);
   const [autoplaymode, setAutoplayMode] = useState(true);
   useEffect(() => {
     const handleResize = () => {
@@ -20,14 +20,8 @@ export default function CertifiedSlider() {
       } else if (window.innerWidth <= 860) {
         setSlidesToShow(4);
         setAutoplayMode(false);
-      } else if (window.innerWidth <= 1024) {
-        setSlidesToShow(5);
-        setAutoplayMode(false);
-      } else if (window.innerWidth <= 1780) {
-        setSlidesToShow(6);
-        setAutoplayMode(false);
       } else {
-        setSlidesToShow(6);
+        setSlidesToShow(4);
         setAutoplayMode(false);
       }
     };
@@ -84,7 +78,7 @@ export default function CertifiedSlider() {
             key={index}
             className="w-full !flex justify-center items-center py-4"
           >
-            <div className="basis-11/12 flex flex-col gap-2 p-4 justify-center items-center bg-site-gray h-20 lg:h-40">
+            <div className="m-4 basis-full flex flex-col gap-2 p-4 justify-center items-center bg-site-gray h-20 lg:h-40">
               <section className="w-full h-[4rem] relative ">
                 <Image
                   src={item.icon}

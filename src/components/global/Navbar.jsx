@@ -1,13 +1,20 @@
-import { Facilities } from "@/lib/facilitiesDataList";
 import { Treatments } from "@/lib/treatmentDataList";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { RiCloseLine, RiMenuAddLine } from "react-icons/ri";
 
 export default function NavBar() {
   const [dropdownStates, setDropdownStates] = useState({});
   const [menuopen, setMenuopen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  const router = useRouter();
+
+  const isActiveRoute = (href) => {
+    return router.asPath === href ? true : false;
+  };
 
   const togglemenuopen = () => {
     setMenuopen(!menuopen);
@@ -19,6 +26,7 @@ export default function NavBar() {
       [index]: !dropdownStates[index],
     });
   };
+
   const NavElement = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
@@ -35,9 +43,18 @@ export default function NavBar() {
     {
       name: "Our Clinics",
       dropdownItems: [
-        { name: "Dentity Dental Dumdum", link: "" },
-        { name: "Dentity Dental Sonarpur", link: "" },
-        { name: "Dentity Dental Gariahat", link: "" },
+        {
+          name: "Dentity Dental Dumdum",
+          link: "/clinics/dentity-dental-dumdum",
+        },
+        {
+          name: "Dentity Dental Sonarpur",
+          link: "/clinics/dentity-dental-sonarpur",
+        },
+        {
+          name: "Dentity Dental Gariahat",
+          link: "/clinics/dentity-dental-gariahat",
+        },
       ],
     },
 
@@ -49,7 +66,7 @@ export default function NavBar() {
 
     { name: "Contact Us", link: "/contact" },
   ];
-  const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 60) {
@@ -162,7 +179,9 @@ export default function NavBar() {
           {NavElement.map((navbar, index) => (
             <div
               key={index}
-              className="font-semibold text-site-main hover:bg-site-sub hover:text-white p-2"
+              className={`font-semibold text-site-main hover:bg-site-sub hover:text-white p-2 ${
+                isActiveRoute(navbar.link) && "bg-site-sub text-white"
+              }`}
             >
               {navbar.dropdownItems ? (
                 <div className="">
@@ -184,7 +203,11 @@ export default function NavBar() {
                           <Link
                             key={i}
                             href={item.link}
-                            className="flex p-1 xlg:p-2 text-xs xlg:text-sm text-site-typo hover:text-site-main hover:bg-gray-200 basis-1/12"
+                            className={`flex p-1 xlg:p-2 text-xs xlg:text-sm hover:text-site-main hover:bg-gray-200 basis-1/12 ${
+                              isActiveRoute(item.link)
+                                ? "bg-gray-200 text-site-main"
+                                : "text-site-typo"
+                            }`}
                           >
                             {item.name}
                           </Link>
@@ -199,69 +222,71 @@ export default function NavBar() {
             </div>
           ))}
         </div>
-        <div className="flex justify-between items-center w-full md:p-3 p-2 px-9 lg:hidden">
-          <Link href={"/"} className="lg:hidden">
-            <Image
-              src="/images/logo.svg"
-              alt=""
-              height={120}
-              width={806}
-              className="h-[2rem] w-fit"
-            />
-          </Link>
-          <button onClick={togglemenuopen} className="   ">
-            {menuopen ? (
-              <RiCloseLine className="sm:text-[2rem] md:text-3xl text-site-main font-semibold" />
-            ) : (
-              <RiMenuAddLine className="sm:text-[2rem] md:text-3xl text-site-main font-semibold" />
-            )}
-          </button>
-        </div>
-        {menuopen && (
-          <div className="flex bg-site-main flex-col h-[50vh] md:h-[40vh] lg:text-3xl text-xl overflow-scroll lg:hidden px-9 relative">
-            {NavElement.map((navbar, index) => (
-              <div
-                key={index}
-                className="font-semibold text-white p-4 md:py-10 border-b-2 border-gray-200"
-              >
-                {navbar.dropdownItems ? (
-                  <div className="relative ">
-                    <button
-                      onClick={() => toggleDropdown(index)}
-                      onMouseEnter={() => toggleDropdown(index)}
-                      className="flex flex-row gap-2 items-center "
-                    >
-                      <div>{navbar.name} </div>
-                      <span className=" text-lg">
-                        {dropdownStates[index] ? "▲" : "▼"}
-                      </span>
-                    </button>
-                    <div className="w-full flex items-center justify-center z-50 relative top-0 ">
-                      {dropdownStates[index] && (
-                        <div className="relative bg-transparent rounded-lg mt-1 p-2 w-full transition-opacity border-gray-200 text-white opacity-100">
-                          {navbar.dropdownItems.map((item, i) => (
-                            <Link
-                              key={i}
-                              href={item.link}
-                              onClick={() => setMenuopen(false)}
-                              className="block py-4 px-4 border-b-[0.5px] border-gray-200 text-white "
-                            >
-                              {item.name}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                ) : (
-                  <Link href={navbar.link} onClick={() => setMenuopen(false)}>
-                    {navbar.name}
-                  </Link>
-                )}
-              </div>
-            ))}
+        <div>
+          <div className="flex justify-between items-center w-full md:p-3 p-2 px-9 lg:hidden">
+            <Link href={"/"} className="lg:hidden">
+              <Image
+                src="/images/logo.svg"
+                alt=""
+                height={120}
+                width={806}
+                className="h-[2rem] w-fit"
+              />
+            </Link>
+            <button onClick={togglemenuopen} className="">
+              {menuopen ? (
+                <RiCloseLine className="sm:text-[2rem] md:text-3xl text-site-main font-semibold" />
+              ) : (
+                <RiMenuAddLine className="sm:text-[2rem] md:text-3xl text-site-main font-semibold" />
+              )}
+            </button>
           </div>
-        )}
+          {menuopen && (
+            <div className="flex bg-site-main flex-col h-[50vh] md:h-[40vh] lg:text-3xl text-xl overflow-scroll lg:hidden px-9 relative">
+              {NavElement.map((navbar, index) => (
+                <div
+                  key={index}
+                  className="font-semibold text-white p-4 md:py-10 border-b-2 border-gray-200"
+                >
+                  {navbar.dropdownItems ? (
+                    <div className="relative ">
+                      <button
+                        onClick={() => toggleDropdown(index)}
+                        onMouseEnter={() => toggleDropdown(index)}
+                        className="flex flex-row gap-2 items-center "
+                      >
+                        <div>{navbar.name} </div>
+                        <span className=" text-lg">
+                          {dropdownStates[index] ? "▲" : "▼"}
+                        </span>
+                      </button>
+                      <div className="w-full flex items-center justify-center z-50 relative top-0 ">
+                        {dropdownStates[index] && (
+                          <div className="relative bg-transparent rounded-lg mt-1 p-2 w-full transition-opacity border-gray-200 text-white opacity-100">
+                            {navbar.dropdownItems.map((item, i) => (
+                              <Link
+                                key={i}
+                                href={item.link}
+                                onClick={() => setMenuopen(false)}
+                                className="block py-4 px-4 border-b-[0.5px] border-gray-200 text-white "
+                              >
+                                {item.name}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  ) : (
+                    <Link href={navbar.link} onClick={() => setMenuopen(false)}>
+                      {navbar.name}
+                    </Link>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
       </header>
     </>
   );
