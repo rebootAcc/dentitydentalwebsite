@@ -26,7 +26,7 @@ export default function Footer() {
               alt="logo"
               height={84}
               width={194}
-              className="h-[2rem] max-w-fit w-full"
+              className="max-w-[13.5vmax] w-full"
             />
             <p className="font-medium text-xs lg:text-sm text-site-typo lg:max-w-[53ch]">
               EVERY TOOTH IN A PERSON IS MORE VALUABLE THAN A DIAMOND. Smile is

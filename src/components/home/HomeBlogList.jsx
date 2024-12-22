@@ -67,9 +67,9 @@ export default function HomeBlogList() {
 
       <div className="w-full">
         <Slider {...settings}>
-          {Blogs.map((blog) => (
+          {Blogs.map((blog, index) => (
             <div
-              key={blog.blogId}
+              key={index}
               className="!flex w-full justify-center items-center"
             >
               <div className="w-[95%] cursor-pointer">
