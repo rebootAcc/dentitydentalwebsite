@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import useElementHeight from "@/hooks/useElementHeight";
+import WhyChooseUsSection from "../global/WhyChooseUsSection";
 
 const AboutSection = () => {
   const [contentHeight, rightContentRef] = useElementHeight();
@@ -35,7 +36,7 @@ const AboutSection = () => {
     },
   ];
   return (
-    <div className="flex flex-col gap-6 xl:p-16 lg:p-8 p-4">
+    <div className="flex flex-col gap-4 md:gap-8 xlg:gap-16 xl:p-16 lg:p-8 p-4">
       <section className="flex flex-col md:flex-row gap-4 xlg:gap-8">
         <section
           className="flex flex-col gap-6 w-full md:w-[50%]"
@@ -59,14 +60,14 @@ const AboutSection = () => {
               alt="about us"
               height={450}
               width={789}
-              className=" w-full rounded-sm h-[50%] object-cover"
+              className=" w-full rounded-sm h-[49%] object-cover"
             />
             <Image
               src={"/images/about2.png"}
               alt="about us"
               height={450}
               width={789}
-              className=" w-full rounded-sm h-[50%] object-cover"
+              className=" w-full rounded-sm h-[49%] object-cover"
             />
           </section>
         </section>
@@ -85,6 +86,23 @@ const AboutSection = () => {
               ></p>
             </div>
           ))}
+        </section>
+      </section>
+      <section className="flex flex-col lg:flex-row gap-4 xlg:gap-8">
+        <section className="lg:w-[50%] w-full">
+          <p className="lg:text-base xlg:text-[17px]/[25px] md:text-sm text-site-typo text-xs/[17px]">
+            Lorem ipsum dolor sit amet consectetur. Faucibus accumsan
+            condimentum sed vitae et adipiscing nascetur. Mauris sed sed
+            adipiscing amet pellentesque suspendisse mi sollicitudin nisl.
+            Dignissim porttitor ac mi amet. Pellentesque in egestas lectus
+            aliquam nulla arcu cras. Dui convallis amet diam nunc et donec
+            scelerisque tellus sit. Vulputate egestas in placerat urna netus
+            viverra. Nulla orci fermentum sit lorem dignissim venenatis. In
+            vestibulum donec leo sed sit rhoncus tristique.
+          </p>
+        </section>
+        <section className="lg:w-[50%] w-full">
+          <WhyChooseUsSection />
         </section>
       </section>
     </div>
