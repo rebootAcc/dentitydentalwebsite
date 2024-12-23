@@ -39,7 +39,7 @@ export default function NavBar() {
       })),
     },
 
-    { name: "Our Facilities", link: "/ourchamber" },
+    { name: "Our Facilities", link: "/facilities" },
     {
       name: "Our Clinics",
       dropdownItems: [

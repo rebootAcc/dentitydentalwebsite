@@ -18,12 +18,7 @@ const BranchServiceCard = ({ content }) => {
         {/* Icon */}
         <div className="md:h-[4rem] md:w-[4rem] h-[3rem] w-[3rem] bg-site-main rounded-full flex justify-center items-center absolute -bottom-8 transition-colors duration-300 group-hover:bg-site-sub">
           <div className="relative md:h-[2rem] md:w-[2rem] h-[1.5rem] w-[1.5rem]">
-            <Image
-              src={icon}
-              alt="icon"
-              layout="fill"
-              className="object-contain"
-            />
+            <Image src={icon} alt="icon" fill className="object-contain" />
           </div>
         </div>
       </div>
