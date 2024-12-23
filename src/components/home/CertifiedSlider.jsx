@@ -76,7 +76,7 @@ export default function CertifiedSlider() {
         {experience.map((item, index) => (
           <section
             key={index}
-            className="w-full !flex justify-center items-center py-4"
+            className="w-full !flex justify-center items-center "
           >
             <div className="m-4 basis-full flex flex-col gap-2 p-4 justify-center items-center bg-site-gray h-20 lg:h-40">
               <section className="w-full h-[4rem] relative ">

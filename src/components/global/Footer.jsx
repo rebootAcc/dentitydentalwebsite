@@ -224,7 +224,7 @@ export default function Footer() {
             />
           ))}
         </div>
-        <div className="w-full h-0.5 bg-site-typo" />
+        <div className="w-full h-[1px] bg-site-typo" />
         <div className="flex flex-col lg:flex-row items-center gap-4 xlg:gap-0 justify-between">
           <h1 className="text-site-typo font-medium text-sm lg:text-xl text-left">
             &copy; Copyright{" "}
