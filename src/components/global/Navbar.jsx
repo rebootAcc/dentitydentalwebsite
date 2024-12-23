@@ -64,7 +64,7 @@ export default function NavBar() {
 
     { name: "Blogs", link: "/blogs" },
 
-    { name: "Contact Us", link: "/contact" },
+    { name: "Contact Us", link: "/contact-us" },
   ];
 
   useEffect(() => {
