@@ -1,51 +1,8 @@
 import React from "react";
 import BranchServiceCard from "../global/BranchServiceCard";
+import { Treatments } from "@/lib/treatmentDataList";
 
 const TreatmentSection = () => {
-  const serviesection = [
-    {
-      imgsrc: "/images/serviceimg.png",
-      heading: "Dental Implant",
-      icon: "/images/serviceicon.svg",
-
-      desc: "Lorem ipsum dolor sit amet consectetur. Tristique ac pretium elementum viverra. A suspendisse tristique magna gravida mattis. Quam eros nam.",
-    },
-    {
-      imgsrc: "/images/serviceimg.png",
-      heading: "Dental Implant",
-      icon: "/images/serviceicon.svg",
-
-      desc: "Lorem ipsum dolor sit amet consectetur. Tristique ac pretium elementum viverra. A suspendisse tristique magna gravida mattis. Quam eros nam.",
-    },
-    {
-      imgsrc: "/images/serviceimg.png",
-      heading: "Dental Implant",
-      icon: "/images/serviceicon.svg",
-
-      desc: "Lorem ipsum dolor sit amet consectetur. Tristique ac pretium elementum viverra. A suspendisse tristique magna gravida mattis. Quam eros nam.",
-    },
-    {
-      imgsrc: "/images/serviceimg.png",
-      heading: "Dental Implant",
-      icon: "/images/serviceicon.svg",
-
-      desc: "Lorem ipsum dolor sit amet consectetur. Tristique ac pretium elementum viverra. A suspendisse tristique magna gravida mattis. Quam eros nam.",
-    },
-    {
-      imgsrc: "/images/serviceimg.png",
-      heading: "Dental Implant",
-      icon: "/images/serviceicon.svg",
-
-      desc: "Lorem ipsum dolor sit amet consectetur. Tristique ac pretium elementum viverra. A suspendisse tristique magna gravida mattis. Quam eros nam.",
-    },
-    {
-      imgsrc: "/images/serviceimg.png",
-      heading: "Dental Implant",
-      icon: "/images/serviceicon.svg",
-
-      desc: "Lorem ipsum dolor sit amet consectetur. Tristique ac pretium elementum viverra. A suspendisse tristique magna gravida mattis. Quam eros nam.",
-    },
-  ];
   return (
     <section className="xl:p-16 lg:p-8 p-4 flex flex-col gap-4">
       <section className="flex flex-col gap-1">
@@ -60,7 +17,7 @@ const TreatmentSection = () => {
         </p>
       </section>
       <section className="w-full grid md:grid-cols-3 grid-cols-2 gap-2 lg:gap-4">
-        {serviesection.map((item, index) => (
+        {Treatments.slice(0, 6).map((item, index) => (
           <div key={index} className="">
             <BranchServiceCard content={item} />
           </div>

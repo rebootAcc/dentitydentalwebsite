@@ -1,5 +1,6 @@
 import Image from "next/image";
 import EnquiryBox from "../global/EnquiryBox";
+import WhyChooseUsSection from "../global/WhyChooseUsSection";
 
 export default function TreatMentAbout() {
   return (
@@ -35,6 +36,7 @@ export default function TreatMentAbout() {
             className="flex-1"
           />
         </div>
+        <WhyChooseUsSection />
       </section>
       <div className="md:w-[40%] w-full">
         <EnquiryBox />

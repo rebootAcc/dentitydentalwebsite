@@ -56,28 +56,28 @@ const OurBranchesSection = () => {
   const clinics = [
     {
       imgsrc: "/images/clinic.png",
-      heading: "Dentity Dental Dum Dum Cantonment",
+      label: "Dentity Dental Dum Dum Cantonment",
       icon: "/images/clinicicon.svg",
 
       desc: "SBI ATM /Dhaka Sweets, Cantonment 28, Subhas Nagar Rd, near Cantonment Station, Subhash Nagar, Dum Dum, Kolkata, West Bengal 700065",
     },
     {
       imgsrc: "/images/clinic.png",
-      heading: "Dentity Dental Dum Dum Cantonment",
+      label: "Dentity Dental Dum Dum Cantonment",
       icon: "/images/clinicicon.svg",
 
       desc: "SBI ATM /Dhaka Sweets, Cantonment 28, Subhas Nagar Rd, near Cantonment Station, Subhash Nagar, Dum Dum, Kolkata, West Bengal 700065",
     },
     {
       imgsrc: "/images/clinic.png",
-      heading: "Dentity Dental Dum Dum Cantonment",
+      label: "Dentity Dental Dum Dum Cantonment",
       icon: "/images/clinicicon.svg",
 
       desc: "SBI ATM /Dhaka Sweets, Cantonment 28, Subhas Nagar Rd, near Cantonment Station, Subhash Nagar, Dum Dum, Kolkata, West Bengal 700065",
     },
     {
       imgsrc: "/images/clinic.png",
-      heading: "Dentity Dental Dum Dum Cantonment",
+      label: "Dentity Dental Dum Dum Cantonment",
       icon: "/images/clinicicon.svg",
 
       desc: "SBI ATM /Dhaka Sweets, Cantonment 28, Subhas Nagar Rd, near Cantonment Station, Subhash Nagar, Dum Dum, Kolkata, West Bengal 700065",
