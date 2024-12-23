@@ -15,6 +15,7 @@ export default {
         "site-sub": "#28AF88",
         "site-typo": "#666666",
         "site-gray": "#E1E8F0",
+        "site-text": "#222222",
       },
       boxShadow: {
         custom: "0px 0px 8px 0px rgba(0, 0, 0, 0.25)",
@@ -24,8 +25,12 @@ export default {
           "linear-gradient(270deg, #E1E8F0 0%, #FFF 50%, #E1E8F0 100%)",
       },
       screens: {
+        xs: "280px",
+        sm: "330px",
+        md: "768px",
+        lg: "1024px",
         xlg: "1280px",
-        xl: "1440px",
+        xl: "1400px",
         xxl: "1780px",
       },
     },
