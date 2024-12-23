@@ -38,7 +38,7 @@ export default function CertifiedSlider() {
     infinite: true,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
-    autoplay: autoplaymode,
+    autoplay: true,
     speed: 6000,
     autoplaySpeed: 500,
     arrows: false,
@@ -78,7 +78,7 @@ export default function CertifiedSlider() {
             key={index}
             className="w-full !flex justify-center items-center "
           >
-            <div className="m-4 basis-full flex flex-col gap-2 p-4 justify-center items-center bg-site-gray h-20 lg:h-40">
+            <div className="w-[95%] flex flex-col gap-2  justify-center items-center bg-site-gray h-20 lg:h-40">
               <section className="w-full h-[4rem] relative ">
                 <Image
                   src={item.icon}

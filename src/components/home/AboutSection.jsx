@@ -88,7 +88,7 @@ const AboutSection = () => {
           ))}
         </section>
       </section>
-      <section className="flex flex-col lg:flex-row gap-4 xlg:gap-8">
+      <section className="flex flex-col md:flex-row gap-4 xlg:gap-8">
         <section className="lg:w-[50%] w-full">
           <p className="lg:text-base xlg:text-[17px]/[25px] md:text-sm text-site-typo text-xs/[17px]">
             Lorem ipsum dolor sit amet consectetur. Faucibus accumsan
