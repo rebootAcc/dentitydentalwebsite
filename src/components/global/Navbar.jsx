@@ -1,3 +1,4 @@
+import { Clinic } from "@/lib/clinicsDataList";
 import { Treatments } from "@/lib/treatmentDataList";
 import Image from "next/image";
 import Link from "next/link";
@@ -68,20 +69,10 @@ export default function NavBar() {
     { name: "Our Facilities", link: "/facilities" },
     {
       name: "Our Clinics",
-      dropdownItems: [
-        {
-          name: "Dentity Dental Dumdum",
-          link: "/clinics/dentity-dental-dumdum",
-        },
-        {
-          name: "Dentity Dental Sonarpur",
-          link: "/clinics/dentity-dental-sonarpur",
-        },
-        {
-          name: "Dentity Dental Gariahat",
-          link: "/clinics/dentity-dental-gariahat",
-        },
-      ],
+      dropdownItems: Clinic.map((item) => ({
+        name: item.label,
+        link: item.href,
+      })),
     },
 
     { name: "Media", link: "/gallery" },

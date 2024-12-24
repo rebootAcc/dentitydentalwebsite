@@ -45,10 +45,10 @@ export default function Footer() {
               className="max-w-[13.5vmax] w-full"
             />
             <p className="font-medium text-xs lg:text-sm text-site-typo lg:max-w-[53ch]">
-              EVERY TOOTH IN A PERSON IS MORE VALUABLE THAN A DIAMOND. Smile is
-              the first thing people notice when they meet one another. Smile is
-              something that can change the world. So in our DENTITY DENTAL
-              Clinics we create a confident smile for you.
+              Dentity Dental is a Multispeciality Clinic Chain in Kolkata &
+              Various Parts of West Bengal. Ranked multiple times in Times of
+              India Health Survery & awarded by Governor of WB for Dental
+              Excellence.
             </p>
             <div className="flex flex-col gap-3 lg:gap-2 xlg:gap-3">
               <button
@@ -221,7 +221,7 @@ export default function Footer() {
                 { label: "Our Clinics", href: "/clinics" },
                 { label: "Media", href: "/gallery" },
                 { label: "Awards", href: "/awards" },
-                { label: "Contact Us", href: "/contact" },
+                { label: "Contact Us", href: "/contact-us" },
                 { label: "Patient Corner", href: "/patient-corner" },
                 { label: "Online Consult", href: "/online-consult" },
                 { label: "Pay Online", href: "/pay-online" },
