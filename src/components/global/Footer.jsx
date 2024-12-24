@@ -229,7 +229,7 @@ export default function Footer() {
                 <li key={key}>
                   <Link
                     href={link.href}
-                    className="text-site-typo hover:text-site-main"
+                    className="text-site-text hover:text-site-main"
                   >
                     {link.label}
                   </Link>
@@ -252,14 +252,14 @@ export default function Footer() {
             />
           ))}
         </div>
-        <div className="w-full h-[1px] bg-site-typo" />
+        <div className="w-full h-[1px] bg-site-text" />
         <div className="flex flex-col lg:flex-row items-center gap-4 xlg:gap-0 justify-between">
-          <h1 className="text-site-typo font-medium text-sm lg:text-xl text-left">
+          <h1 className="text-site-text font-medium text-sm lg:text-xl text-left">
             &copy; Copyright{" "}
             <span className="font-semibold">Dentity Dental - 2025</span> All
             Rights Reserved
           </h1>
-          <h1 className="text-site-typo font-medium text-sm lg:text-xl text-right">
+          <h1 className="text-site-text font-medium text-sm lg:text-xl text-right">
             Design &amp; Developed By:{" "}
             <Link
               href="https://rebootai.in/"
@@ -290,7 +290,7 @@ function FooterList({ Treatments, title }) {
             <li>
               <Link
                 href={link.href}
-                className="text-site-typo hover:text-site-main"
+                className="text-site-text hover:text-site-main"
               >
                 {link.label}
               </Link>
