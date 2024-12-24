@@ -66,7 +66,7 @@ export default function CertifiedSlider() {
     },
     {
       icon: "/acknowledgement/denatal-clinic.svg",
-      name: "Most Affordable Dental Clinic in Kolkata & WB",
+      name: "Most Affordable Dental Clinic Chain in Kolkata & WB",
     },
   ];
 

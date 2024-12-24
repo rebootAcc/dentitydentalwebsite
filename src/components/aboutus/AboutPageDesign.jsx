@@ -70,15 +70,16 @@ const AboutPageDesign = () => {
             Why Choose Dentity Dental?
           </h1>
           <p className="text-site-typo text-xs/[17px] lg:text-sm/[21px] xlg:text-base/[26px]">
-            1. Experienced and Skilled Dentists: Dentity Dental has the industry
-            expertise Dentists for you & your family's complete teeth care.{" "}
-            <br /> 2.Multispeciality Clinic: Dentity Dental is multispeciality
-            Dental Claim Chain in Kolkata, provides all kinds of Dental Services
-            under one roof. <br /> 3.Complete Dental Services: Whether you need
-            a routine check-up, cosmetic dentistry, orthodontics, or facial
+            <strong> Experienced and Skilled Dentists:</strong> Dentity Dental
+            has the industry expertise Dentists for you & your family's complete
+            teeth care. <br /> <strong>Multispeciality Clinic:</strong> Dentity
+            Dental is multispeciality Dental Claim Chain in Kolkata, provides
+            all kinds of Dental Services under one roof. <br />{" "}
+            <strong>Complete Dental Services: </strong> Whether you need a
+            routine check-up, cosmetic dentistry, orthodontics, or facial
             treatments, Dentity Dental Offers wide range of Dental Treatment
-            services. <br /> 4.Trusted and Awarded: As an ISO certified brand
-            awarded by the Governor of West Bengal, and ranked
+            services. <br /> <strong>Trusted and Awarded: </strong> As an ISO
+            certified brand awarded by the Governor of West Bengal, and ranked
           </p>
         </div>
         <WhyChooseUsSection />
