@@ -96,7 +96,6 @@ const treatments = [
       "/treatments/DENTAL-IMPLANT-1.jpg",
       "/treatments/DENTAL-IMPLANT-2.jpg",
     ],
-
   },
   {
     label: "Oral & Maxillofacial Surgery",
@@ -281,7 +280,10 @@ const treatments = [
     icon: "/images/serviceicon.svg",
     imgsrc: "/images/serviceimg.png",
     desc: "Dental X ray machine is a device used to take radiographic images of tooth ,jaw bones etc. to evaluate oral health of the patient.It helps Dentists to diagnose tooth cavities,tooth decay,bony lesions of jaws etc.The portable version of dental x ray machine is really handy ,easy to use &time saving.We , Dentity Dental always rely on portable dental x ray machine.",
-    cover: [""],
+    cover: [
+      "/treatments/PORTABLE-DENTAL-X-RAY-MACHINE-1.jpg",
+      "/treatments/PORTABLE-DENTAL-X-RAY-MACHINE-2.jpg",
+    ],
   },
   {
     label: "Cosmetic Intraoral Surgery",
@@ -344,9 +346,12 @@ const treatments = [
     label: "Tooth Vitality Test",
     href: "/treatments/tooth-vitality-test",
     icon: "/images/serviceicon.svg",
-    imgsrc: "/images/serviceimg.png",
+    imgsrc: "/treatments/TOOTH-VITALITY-TEST-1.jpg",
     desc: "Whether any tooth is living or dead can be diagnosed/tested by Tooth Vitality Test . This kind of test can be done by various ways . Among all Electric Pulp Tester is most advanced process of tooth vitality test.Before going to any particular treatment procedure of any tooth it is mandatory to know the vital status of tooth / tooth pulp .It is most commonly done in case of any traumatised tooth.",
-    cover: [""],
+    cover: [
+      "/treatments/TOOTH-VITALITY-TEST-1.jpg",
+      "/treatments/TOOTH-VITALITY-TEST-2.jpg",
+    ],
   },
   {
     label: "Dental Lab Work",

@@ -70,7 +70,7 @@ export default function NavBar() {
     {
       name: "Our Clinics",
       dropdownItems: Clinic.map((item) => ({
-        name: item.label,
+        name: item.navLabel,
         link: item.href,
       })),
     },

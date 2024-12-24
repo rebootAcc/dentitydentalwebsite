@@ -29,7 +29,7 @@ const ContactUsPage = ({ contact }) => {
           key={index}
         >
           <div className="flex flex-col" ref={rightContentRef}>
-            <div className="w-full h-[4rem] lg:h-[4.5rem] flex justify-center items-center bg-site-main text-white lg:text-2xl text-xl font-semibold">
+            <div className="w-full h-[4rem] lg:h-[4.5rem] flex justify-center items-center bg-site-main text-white lg:text-2xl text-xl font-semibold text-center">
               {item.label}
             </div>
             <div className="flex flex-col gap-6 p-4 lg:p-6 xlg:p-10 shadow-custom ">

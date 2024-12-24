@@ -3,6 +3,7 @@ import RelatedTreatment from "@/components/treatments/RelatedTreatment";
 import TreatMentAbout from "@/components/treatments/TreatMentAbout";
 import WebsiteTemplate from "@/templates/WebsiteTemplate";
 import { Treatments as AllTreatments } from "@/lib/treatmentDataList";
+import { useRouter } from "next/router";
 
 export default function Treatments({
   metatitle,
@@ -12,14 +13,16 @@ export default function Treatments({
   cover,
   href,
 }) {
+  const router = useRouter();
+
   return (
     <WebsiteTemplate
-      title="Our Treatments"
+      title={metatitle}
       description="Dentity Dental designed & developed by Reboot AI Private Limited"
     >
       <SubBanner heading="Treatment" />
       <TreatMentAbout title={title} description={description} cover={cover} />
-      <RelatedTreatment />
+      <RelatedTreatment currentQuery={router.query.treatment} />
     </WebsiteTemplate>
   );
 }
@@ -42,8 +45,7 @@ export const getStaticProps = async ({ params }) => {
   const treatmentData = AllTreatments.reduce((acc, item) => {
     const key = item.href.split("/")[2];
     acc[key] = {
-      metatitle:
-        "Website Development Company in Kolkata - Custom Website Development",
+      metatitle: `${item.label} treatment in Kolkata`,
       metadescription:
         "Looking for an experienced custom website development company to build a unique online presence with Reboot AI's Custom Website Development services.",
       title: item.label,

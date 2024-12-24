@@ -3,6 +3,7 @@ import RelatedClinics from "@/components/clinics/RelatedClinics";
 import SubBanner from "@/components/global/SubBanner";
 import WebsiteTemplate from "@/templates/WebsiteTemplate";
 import { Clinic as AllClinic } from "@/lib/clinicsDataList";
+import { useRouter } from "next/router";
 
 export default function Clinic({
   metatitle,
@@ -17,6 +18,7 @@ export default function Clinic({
   iframe,
   phone,
 }) {
+  const router = useRouter();
   return (
     <WebsiteTemplate
       title="Our Clinics"
@@ -33,7 +35,7 @@ export default function Clinic({
         iframe={iframe}
         phone={phone}
       />
-      <RelatedClinics />
+      <RelatedClinics currentQuery={router.query.clinic} />
     </WebsiteTemplate>
   );
 }
