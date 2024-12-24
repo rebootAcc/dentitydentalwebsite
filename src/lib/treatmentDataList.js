@@ -278,7 +278,7 @@ const treatments = [
     label: "Portable Dental X-Ray Machine",
     href: "/treatments/portable-dental-x-ray-machine",
     icon: "/images/serviceicon.svg",
-    imgsrc: "/images/serviceimg.png",
+    imgsrc: "/treatments/PORTABLE-DENTAL-X-RAY-MACHINE-1.jpg",
     desc: "Dental X ray machine is a device used to take radiographic images of tooth ,jaw bones etc. to evaluate oral health of the patient.It helps Dentists to diagnose tooth cavities,tooth decay,bony lesions of jaws etc.The portable version of dental x ray machine is really handy ,easy to use &time saving.We , Dentity Dental always rely on portable dental x ray machine.",
     cover: [
       "/treatments/PORTABLE-DENTAL-X-RAY-MACHINE-1.jpg",

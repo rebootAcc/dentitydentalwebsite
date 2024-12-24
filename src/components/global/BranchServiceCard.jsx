@@ -17,7 +17,7 @@ const BranchServiceCard = ({ content }) => {
           alt={label}
           width={624}
           height={459}
-          className="w-full max-h-80 object-cover"
+          className="w-full md:h-[13rem] h-[8rem] sm:h-[10rem] lg:h-[17rem] xlg:h-[19rem]  object-cover"
         />
 
         {/* Icon */}
@@ -30,7 +30,7 @@ const BranchServiceCard = ({ content }) => {
 
       {/* Content */}
       <div className="xlg:p-6 lg:p-4 p-2 pt-10 md:pt-12 lg:pt-12 xlg:pt-12 lg:pb-6 pb-4 flex flex-col text-center items-center justify-center bg-white-gradient lg:gap-2">
-        <h1 className="xlg:text-lg/[24px] text-base/[20px] font-semibold text-site-main transition-colors duration-300 group-hover:text-site-sub text-center">
+        <h1 className="xlg:text-lg/[24px] text-sm/[17px] md:text-sm/[17px] line-clamp-2  h-[2rem] lg:h-[2.5rem] font-semibold text-site-main transition-colors duration-300 group-hover:text-site-sub text-center">
           {label}
         </h1>
 
