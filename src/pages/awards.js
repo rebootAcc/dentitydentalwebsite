@@ -11,7 +11,12 @@ const Awards = () => {
     "/images/toi-awards.jpg",
   ];
   return (
-    <WebsiteTemplate title={"Awards"} description={""}>
+    <WebsiteTemplate
+      title={"Awards of Dentity Dental | Recognized Excellence"}
+      description={
+        "Check out the latest awards and recognitions earned by Dentity Dental. ISO-certified and awarded as the No.1 dental clinic by the Times of India Health Survey."
+      }
+    >
       <SubBanner heading={"Awards"} />
       <section className="xl:p-16 lg:p-8 p-4">
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
