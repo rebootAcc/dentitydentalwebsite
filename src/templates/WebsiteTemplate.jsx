@@ -10,7 +10,9 @@ export default function WebsiteTemplate({ children, title, description }) {
         <meta name="description" content={description} />
       </Head>
       <NavBar />
-      {children}
+      <div className="lg:mt-[6.5rem] md:mt-[4.5rem] mt-[3.5rem]">
+        {children}
+      </div>
       <Footer />
     </>
   );

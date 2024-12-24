@@ -11,20 +11,12 @@ const WhyChooseUsSection = () => {
       number: "10,00,000",
     },
     {
-      name: "Patients Served",
-      number: "10,00,000",
-    },
-    {
-      name: "Multiplicity Dental Clinic",
-      number: "07",
-    },
-    {
       name: "Trusted Awards",
       number: "5",
     },
     {
-      name: "Best Dentist Award 2021",
-      number: "5",
+      name: "Multiplicity Dental Clinic",
+      number: "9",
     },
   ];
   return (
@@ -32,7 +24,7 @@ const WhyChooseUsSection = () => {
       <h1 className="xlg:text-2xl text-xl font-semibold text-site-main">
         Why Choose Dentity Dental
       </h1>
-      <section className="grid grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-4 lg:gap-y-0 md:gap-2 xl:gap-4">
+      <section className="grid grid-cols-2 lg:grid-cols-2 gap-x-2 gap-y-4 lg:gap-y-0 md:gap-2 xl:gap-4">
         {whychooseus.map((item, index) => (
           <div key={index} className="flex flex-row items-center gap-2">
             <div className=" ">

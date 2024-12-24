@@ -59,7 +59,7 @@ const treatments = [
     label: "Dental Implant",
     href: "/treatments/dental-implant",
     icon: "/images/serviceicon.svg",
-    imgsrc: "/images/serviceimg.png",
+    imgsrc: "/images/dental-implant.png",
     desc: "Lorem ipsum dolor sit amet consectetur. Tristique ac pretium elementum viverra. A suspendisse tristique magna gravida mattis. Quam eros nam.",
   },
   {
