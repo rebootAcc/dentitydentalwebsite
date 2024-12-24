@@ -49,6 +49,11 @@ export default function RelatedTreatment({ currentQuery }) {
     (treatment) => !treatment.href.includes(currentQuery)
   );
 
+  const shuffledTreatments = relatedTreatMents.sort(() => 0.5 - Math.random());
+
+  // Get the first 10 items from the shuffled array
+  const randomRelatedTreatments = shuffledTreatments.slice(0, 10);
+
   return (
     <section className="flex flex-col relative gap-4 lg:gap-9 p-4 lg:p-8 xl:p-16">
       <h1 className="text-lg md:text-3xl font-medium text-site-main">
@@ -61,7 +66,7 @@ export default function RelatedTreatment({ currentQuery }) {
         confident smile for you.
       </h3>
       <Slider {...settings}>
-        {relatedTreatMents.slice(0, 10).map((item, index) => (
+        {randomRelatedTreatments.map((item, index) => (
           <div key={index} className="!flex justify-center px-2 lg:px-6 py-4">
             <BranchServiceCard content={item} />
           </div>

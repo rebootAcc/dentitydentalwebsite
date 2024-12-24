@@ -4,7 +4,7 @@ import React from "react";
 const BranchServiceCard = ({ content }) => {
   const { imgsrc, label, icon, desc } = content;
   return (
-    <div className="w-full flex flex-col border border-site-gray group hover:shadow-custom transition-shadow duration-200">
+    <div className="w-full flex flex-col border border-site-gray group hover:shadow-custom transition-shadow duration-200 self-stretch">
       <div className="relative w-full flex justify-center items-center">
         {/* Image */}
         <Image
@@ -28,7 +28,9 @@ const BranchServiceCard = ({ content }) => {
         <h1 className="xlg:text-lg/[24px] text-base/[20px] font-semibold text-site-main transition-colors duration-300 group-hover:text-site-sub">
           {label}
         </h1>
+
         <p className="xlg:text-base/[24px] lg:text-sm text-xs/[16px] text-center text-site-typo three-line-limit">
+
           {desc}
         </p>
       </div>
