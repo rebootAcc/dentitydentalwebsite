@@ -28,7 +28,9 @@ const BranchServiceCard = ({ content }) => {
         <h1 className="xlg:text-lg/[24px] text-base/[20px] font-semibold text-site-main transition-colors duration-300 group-hover:text-site-sub">
           {label}
         </h1>
-        <p className="xlg:text-base/[24px] lg:text-sm text-xs/[16px] text-center text-site-typo line-clamp-5">
+
+        <p className="xlg:text-base/[24px] lg:text-sm text-xs/[16px] text-center text-site-typo three-line-limit">
+
           {desc}
         </p>
       </div>

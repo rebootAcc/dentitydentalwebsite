@@ -12,7 +12,7 @@ export default function HomeEnquiry() {
         style={{ height: `${contentHeight}px` }}
       >
         <Image
-          src="/images/newspaper-cut-out.jpeg"
+          src="/images/dd-toi-article.jpg"
           alt="enquiry"
           width={636}
           height={540}

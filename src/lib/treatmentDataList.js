@@ -89,12 +89,14 @@ const treatments = [
     label: "Dental Implant",
     href: "/treatments/dental-implant",
     icon: "/images/serviceicon.svg",
+
     imgsrc: "/treatments/DENTAL-IMPLANT-1.jpg",
     desc: "Some people don't prefer or the oral condition may not be suitable for Dentures or Fixed Bridges.For them we have other best solution known as DENTAL IMPLANT. This is actually Titanium/Coated Titanium alloy which through minimum surgical procedure partially placed in the jaw bone & an artificial tooth is fixed on this implant.This process can do fixed(even life long if properly maintained) one, more than one or all lost/missing natural tooth/teeth.Well,it is not an easy task for Implantologists because jawline,occlution, contact points,load many things are essential factors must to judge for IMPLANTS.You can visit DENTITY DENTAI-can consult about DENTAL IMPLANT for proper guidance & for proper Dental Implant.",
     cover: [
       "/treatments/DENTAL-IMPLANT-1.jpg",
       "/treatments/DENTAL-IMPLANT-2.jpg",
     ],
+
   },
   {
     label: "Oral & Maxillofacial Surgery",

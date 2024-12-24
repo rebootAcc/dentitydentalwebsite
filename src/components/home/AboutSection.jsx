@@ -13,26 +13,22 @@ const AboutSection = () => {
       setIsSmallScreen(window.innerWidth < 768);
     };
 
-    handleResize(); // Check on initial render
-    window.addEventListener("resize", handleResize); // Add event listener for resizing
+    handleResize();
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize); // Cleanup listener
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   const aboutcontent = [
     {
       heading: "Most Affordable Dental  Clinic In Kolkata",
-      text: "Lorem ipsum dolor sit amet consectetur. Faucibus cursus ut dignissim nisl pellentesque velit. Et varius pretium auctor pharetra nisi. Purus id quis convallis augue facilisi mauris sapien tempus malesuada. Mattis dictum mi ultrices nisi. Adipiscing augue et vitae risus. Odio morbi elit adipiscing facilisis augue feugiat hendrerit facilisis. Eu dolor porta ut scelerisque sagittis. Non nibh pretium leo malesuada aliquet id pharetra.<br/> Sed tortor sit aliquam felis viverra adipiscing. Est lacus phasellus condimentum fringilla. Non pellentesque pellentesque commodo duis morbi. Amet commodo ut purus nam facilisis ut purus a. Ultricies ac id viverra fringilla at lorem leo. Senectus sagittis sagittis euismod dolor arcu urna interdum purus sed. In pharetra molestie morbi viverra lorem leo a blandit cursus. Nulla pulvinar pellentesque blandit aenean sem aliquam ut ut. Egestas vitae diam eu nibh consequat.Lorem viverra vitae scelerisque pretium varius viverra nulla pharetra. Rutrum commodo sed posuere neque non praesent pulvinar. Vitae integer commodo nulla odio ipsum pulvinar ultrices morbi eu. A nec odio ullamcorper tellus faucibus venenatis. Senectus gravida euismod euismod et sit massa feugiat nec. Magna duis risus eget amet est gravida at.",
+      text: "Dentity Dental Is an ISO Certified Brand & Awarded by the Governor of West Bengal. Multiple times, this brand has ranked in the number 1 position according to the Times of India Health Survey. Dentity Dental Is the Best & Affordable Multi-speciality Chain Dental Clinic, which provides all kinds of Oral, Dental & Facial Treatments in a Highly Expertised Way.Every Tooth in a Person Is More Valuable Than a Diamond. <br/> <br/> Smile is the first thing people notice when they meet one another. Smile is something that can change the world. So in our Dentity Dental Clinics, we create a confident smile for you. We the Dentity Dental – a chain of multispeciality Dental Clinics in Kolkata (Tollygunge Netajinagar, Tollyhunge Suryanagar, Sonarpur, Dumdum Cantonment, VIP Road Teghoria, Rajarhat-Teghoria-Newtown-Chinapark, Gariahat, Beleghata) & various places of West Bengal (Dental Mid World, Midnapur) already served an uncountable number of happy patients with our ultramodern equipment, latest advanced technology, and most importantly, highly skilled specialist dentists.",
     },
     {
-      heading: "Most Affordable Dental  Clinic In Kolkata",
-      text: "Plementum egestas blandit nibh suspendisse ultrices porta. Fringilla leo ultricies in tortor orci. Volutpat ultrices nam nulla felis lacus rhoncus turpis eget est. Velit ultrices enim dignissim et arcu. Nam odio egestas enim interdum feugiat ut fermentum et. Varius mi curabitur massa hendrerit ipsum mattis. Consequat nulla id tellus integer in lectus mattis et neque. Fermentum lacus eu tristique fermentum sit condimentum porta mi. Pharetra eget dolor ultrices cum sit id faucibus a pellentesque.<br/> Porta congue at eu lectus et natoque amet sed vitae. Eget ultricies elementum nibh cras dolor. Aliquet aliquam nulla quis varius adipiscing arcu nibh id. Fermentum sit feugiat accumsan volutpat massa viverra ultricies. Id amet cras dignissim integer arcu elit senectus. Sed aenean eget mattis ac nulla libero euismod ante. <br/> Vitae est enim orci egestas. Ornare tristique nulla vel libero placerat suspendisse felis. Metus consectetur elementum ipsum donec suspendisse mattis. Quam congue in eget ultrices dolor faucibus.",
-    },
-    {
-      heading: "Most Affordable Dental  Clinic In Kolkata",
-      text: "EVERY TOOTH IN A PERSON IS MORE VALUABLE THAN A DIAMOND. Smile is the first thing people notice when they meet one another. Smile is something that can change the world. So in our DENTITY DENTAL Clinics we create a confident smile for you. We THE DENTITY DENTAL - A CHAIN OF MULTISPECIALITY DENTAL CLINICS in Kolkata(Tollygunge Netajinagar,Tollyhunge Suryanagar, Sonarpur, Dumdum Cantonment, VIP ROAD TEGHORIA, RAJARHAT | TEGHORIA | NEWTOWN | CHINARPARK, GARIAHAT, BELEGHATA)",
+      heading: "Why Choose Dentity Dental?",
+      text: "At Dentity Dental, we understand that your smile is important. Here's why you should consider us for your dental care: <br/> <br/> 1. Experienced and Skilled Dentists: Dentity Dental has the industry expertise Dentists for you & your family's complete teeth care. <br/> 2.Multispeciality Clinic: Dentity Dental is multispeciality Dental Claim Chain in Kolkata, provides all kinds of Dental Services under one roof. <br/> 3.Complete Dental Services: Whether you need a routine check-up, cosmetic dentistry, orthodontics, or facial treatments, Dentity Dental Offers wide range of Dental Treatment services. <br/> 4.Trusted and Awarded: As an ISO certified brand awarded by the Governor of West Bengal, and ranked number 1 in the Times of India Health Survey, you can trust us to provide excellent care and service. <br/> 5. Friendly and Caring Staff: From the Walk-in to Exit we our staffs are friendly that they will guide you everything with care. <br/> 6. Convenient Locations: With multiple clinics across Kolkata and West Bengal, including Tollygunge, Netajinagar, Suryanagar, and more, It is very easy to find a Dentity Dental Branch clinic near you. <br/> 7. Positive Patient Experiences: We have countless number of patients who are satisfied & give us a positive feedback. <br/> 8. Hygiene and Safety: Patient Heath & safety is priority for us, Dentity Dental is committed to maintain Dental hygiene & safety.",
     },
   ];
   return (
@@ -44,7 +40,7 @@ const AboutSection = () => {
         >
           <section className="flex flex-col gap-3 h-[40%]">
             <Image
-              src={"/images/aboutus1.png"}
+              src={"/images/toi-about.jpg"}
               alt="about us"
               height={648}
               width={801}
@@ -56,14 +52,14 @@ const AboutSection = () => {
           </section>
           <section className="h-[60%] flex flex-col gap-4">
             <Image
-              src={"/images/about2.png"}
+              src={"/images/gov-about.jpg"}
               alt="about us"
               height={450}
               width={789}
               className=" w-full rounded-sm h-[49%] object-cover"
             />
             <Image
-              src={"/images/about2.png"}
+              src={"/images/gov2-about.jpg"}
               alt="about us"
               height={450}
               width={789}
@@ -91,14 +87,12 @@ const AboutSection = () => {
       <section className="flex flex-col md:flex-row gap-4 xlg:gap-8">
         <section className="lg:w-[50%] w-full">
           <p className="lg:text-base xlg:text-[17px]/[25px] md:text-sm text-site-typo text-xs/[17px]">
-            Lorem ipsum dolor sit amet consectetur. Faucibus accumsan
-            condimentum sed vitae et adipiscing nascetur. Mauris sed sed
-            adipiscing amet pellentesque suspendisse mi sollicitudin nisl.
-            Dignissim porttitor ac mi amet. Pellentesque in egestas lectus
-            aliquam nulla arcu cras. Dui convallis amet diam nunc et donec
-            scelerisque tellus sit. Vulputate egestas in placerat urna netus
-            viverra. Nulla orci fermentum sit lorem dignissim venenatis. In
-            vestibulum donec leo sed sit rhoncus tristique.
+            Dr. Saikat Paul (Consultant Oral, Dental Surgeon & Maxillofacial
+            Prosthodontist Founder cum Owner of Dentity Dental (150 certified,
+            Best multispeciality dental chain clinic in Kolkata & West Bengal as
+            per Times Of India Health Survey) Receiving Award from honourable
+            governor (Shri C.V. Ananda Bose) of West Bengal for professional and
+            academic excellance in Health Care Sector.
           </p>
         </section>
         <section className="lg:w-[50%] w-full">

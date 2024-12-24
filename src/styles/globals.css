@@ -45,6 +45,34 @@ body {
   animation: shine 1.5s ease-out infinite;
 }
 
+.buttonshinehover {
+  position: relative;
+  overflow: hidden; /* Ensures the shine effect stays within the button */
+}
+.buttonshinehover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150px;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.908) 50%,
+    rgba(255, 255, 255, 0) 70%
+  );
+
+  opacity: 0;
+  transform: skewX(-20deg);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.buttonshinehover:hover::before {
+  opacity: 0.6;
+  animation: shine 2s ease-out infinite;
+}
+
 @keyframes shine {
   0% {
     left: -150px; /* Start outside */
@@ -52,4 +80,41 @@ body {
   100% {
     left: 100%; /* Move completely across */
   }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-container {
+  animation: zoomIn 0.3s ease-out forwards;
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+.modal-container.zoom-out {
+  animation: zoomOut 0.3s ease-out forwards;
+}
+.three-line-limit {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
