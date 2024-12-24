@@ -10,8 +10,8 @@ import WebsiteTemplate from "@/templates/WebsiteTemplate";
 export default function Home() {
   return (
     <WebsiteTemplate
-      title="Home"
-      description="Dentity Dental designed & developed by Reboot AI Private Limited"
+      title="Best Dental Clinic in Kolkata | Dentity Dental"
+      description="Discover the best dental clinic in Kolkata at Dentity Dental. We provide advanced oral, dental, and facial treatments with state-of-the-art technology and expert dentists."
     >
       <Banner />
       <CertifiedSlider />

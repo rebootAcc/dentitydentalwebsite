@@ -12,7 +12,12 @@ const Media = () => {
     "FYD0wJFBKNI?si=bInkidfhfOGherPS",
   ];
   return (
-    <WebsiteTemplate title={"Media"} description={""}>
+    <WebsiteTemplate
+      title={"Dentity Dental Media Coverage | Highlights & Updates"}
+      description={
+        "Stay updated with the latest media coverage of Dentity Dental. See how we’re making headlines with our award-winning dental care and state-of-the-art services."
+      }
+    >
       <SubBanner heading={"Media"} />
       <div className="xl:p-16 lg:p-8 p-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xlg:gap-8">

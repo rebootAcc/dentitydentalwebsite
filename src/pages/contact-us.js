@@ -6,7 +6,12 @@ import { Clinic } from "@/lib/clinicsDataList";
 
 const ContactUs = () => {
   return (
-    <WebsiteTemplate title={"Contact Us"} description={""}>
+    <WebsiteTemplate
+      title={"Contact Dentity Dental | Locations & Contact Information"}
+      description={
+        "Reach out to Dentity Dental. Find our clinic locations, contact numbers, and connect with the best dental experts in Kolkata and West Bengal."
+      }
+    >
       <SubBanner heading={"Contact US"} />
       <ContactUsPage contact={Clinic} />
     </WebsiteTemplate>
