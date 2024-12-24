@@ -2,8 +2,24 @@ import { Facilities } from "@/lib/facilitiesDataList";
 import { Treatments } from "@/lib/treatmentDataList";
 import Image from "next/image";
 import Link from "next/link";
+import { FaRegWindowClose } from "react-icons/fa";
+import EnquiryBox from "./EnquiryBox";
+import { useState } from "react";
 
 export default function Footer() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedComponent, setSelectedComponent] = useState(null);
+
+  const openModal = (componentName) => {
+    setSelectedComponent(componentName);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    const modalElement = document.querySelector(".modal-container");
+    modalElement.classList.add("zoom-out");
+    setTimeout(() => setModalOpen(false), 300);
+  };
   function chunkArray(array, chunkSize = 10) {
     const chunks = [];
     for (let i = 0; i < array.length; i += chunkSize) {
@@ -35,7 +51,10 @@ export default function Footer() {
               Clinics we create a confident smile for you.
             </p>
             <div className="flex flex-col gap-3 lg:gap-2 xlg:gap-3">
-              <button className="rounded-md px-2 md:px-4 lg:px-2 xlg:px-4 h-[2.5rem] bg-site-sub text-white flex justify-center md:gap-2 xlg:gap-4 lg:gap-2 gap-1 items-center buttonshine">
+              <button
+                onClick={() => openModal("EnquiryBoxComponent")}
+                className="rounded-md px-2 md:px-4 lg:px-2 xlg:px-4 h-[2.5rem] bg-site-sub text-white flex justify-center md:gap-2 xlg:gap-4 lg:gap-2 gap-1 items-center buttonshine"
+              >
                 <div className="relative w-4 h-4 xlg:w-6 xlg:h-6">
                   <div className="relative w-4 h-4">
                     <Image
@@ -49,8 +68,29 @@ export default function Footer() {
                 <span className="text-xs md:text-base lg:text-[10px] xlg:text-sm xl:text-base">
                   Online Consult
                 </span>
+                {modalOpen && (
+                  <div className="fixed top-0 z-[1300] left-0 w-full h-full flex items-center justify-center overflow-y-scroll bg-black bg-opacity-50">
+                    <div className=" w-full sm:h-[50vh] lg:h-[100vh] justify-center items-center flex flex-col modal-container  rounded-lg">
+                      <div className="w-full flex p-4 justify-end items-center"></div>
+                      <div className=" w-[95%] md:w-[60%] lg:w-[45%] xl:w-[40%] xxl:w-[30%] z-[1300] relative">
+                        <button
+                          className="bg-primary text-site-main lg:w-16 right-2  absolute z-[1400] top-2 lg:h-10 sm:w-12 sm:h-8 flex items-center justify-center rounded-lg hover:bg-white hover:text-primary border-2 border-site-main transition-colors duration-300"
+                          onClick={closeModal}
+                        >
+                          <FaRegWindowClose className="lg:text-2xl sm:text-xl" />
+                        </button>
+                        {selectedComponent === "EnquiryBoxComponent" && (
+                          <EnquiryBox />
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                )}
               </button>
-              <button className="rounded-md px-2 md:px-4 lg:px-2 xlg:px-4 h-[2.5rem] bg-site-main text-white flex justify-center md:gap-2 xlg:gap-4 lg:gap-2 gap-1 items-center buttonshine">
+              <Link
+                href={"#"}
+                className="rounded-md px-2 md:px-4 lg:px-2 xlg:px-4 h-[2.5rem] bg-site-main text-white flex justify-center md:gap-2 xlg:gap-4 lg:gap-2 gap-1 items-center buttonshine"
+              >
                 <div className="relative w-4 h-4 ">
                   <Image
                     src={"/images/payonlineicon.svg"}
@@ -62,7 +102,7 @@ export default function Footer() {
                 <span className="text-xs md:text-base lg:text-[10px] xlg:text-sm xl:text-base">
                   Pay Online
                 </span>
-              </button>
+              </Link>
             </div>
             <div className="flex justify-between gap-3 lg:gap-2 xlg:gap-3">
               <Link
