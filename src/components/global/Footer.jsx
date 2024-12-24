@@ -106,7 +106,8 @@ export default function Footer() {
             </div>
             <div className="flex justify-between gap-3 lg:gap-2 xlg:gap-3">
               <Link
-                href=""
+                href="https://www.youtube.com/channel/UC-iPLeqAzrCXv3_gowjrqWw"
+                target="_blank"
                 className="text-[1.5rem] xlg:text-[2.5rem] object-cover"
               >
                 <svg
@@ -125,7 +126,8 @@ export default function Footer() {
                 </svg>
               </Link>
               <Link
-                href=""
+                href="https://www.facebook.com/dentity.dental/"
+                target="_blank"
                 className="text-[1.5rem] xlg:text-[2.5rem] object-cover"
               >
                 <svg
@@ -167,7 +169,7 @@ export default function Footer() {
                 </svg>
               </Link>
               <Link
-                href=""
+                href="https://api.whatsapp.com/send?phone=919051553253"
                 className="text-[1.5rem] xlg:text-[2.5rem] object-cover"
               >
                 <svg

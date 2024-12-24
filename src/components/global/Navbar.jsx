@@ -113,7 +113,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="fixed top-0 bg-white z-[60] w-full">
+      <div className="fixed top-0 bg-white z-[60] w-full ">
         <div className="hidden lg:flex justify-between  items-center sm:gap-2 z-[50] lg:gap-0 flex-row p-3 lg:px-8">
           <Link href={"/"} className="">
             <Image
@@ -412,23 +412,23 @@ export default function NavBar() {
             </div>
           )}
         </div>
-        {modalOpen && (
-          <div className="fixed top-0 z-[1300] left-0 w-full h-full flex items-center justify-center overflow-y-scroll bg-black bg-opacity-50">
-            <div className=" w-full sm:h-[50vh] lg:h-[100vh] justify-center items-center flex flex-col modal-container  rounded-lg">
-              <div className="w-full flex p-4 justify-end items-center"></div>
-              <div className=" w-[95%] md:w-[60%] lg:w-[45%] xl:w-[40%] xxl:w-[30%] z-[1300] relative">
-                <button
-                  className="bg-primary text-site-main lg:w-16 right-2  absolute z-[1400] top-2 lg:h-10 sm:w-12 sm:h-8 flex items-center justify-center rounded-lg hover:bg-white hover:text-primary border-2 border-site-main transition-colors duration-300"
-                  onClick={closeModal}
-                >
-                  <FaRegWindowClose className="lg:text-2xl sm:text-xl" />
-                </button>
-                {selectedComponent === "EnquiryBoxComponent" && <EnquiryBox />}
-              </div>
+      </header>
+      {modalOpen && (
+        <div className="fixed top-0 z-[1300] left-0 w-full h-full flex items-center justify-center overflow-y-scroll bg-black bg-opacity-50">
+          <div className=" w-full sm:h-[50vh] lg:h-[100vh] justify-center items-center flex flex-col modal-container  rounded-lg">
+            <div className="w-full flex p-4 justify-end items-center"></div>
+            <div className=" w-[95%] md:w-[60%] lg:w-[45%] xl:w-[40%] xxl:w-[30%] z-[1300] relative">
+              <button
+                className="bg-primary text-site-main lg:w-16 right-2  absolute z-[1400] top-2 lg:h-10 sm:w-12 sm:h-8 flex items-center justify-center rounded-lg hover:bg-white hover:text-primary border-2 border-site-main transition-colors duration-300"
+                onClick={closeModal}
+              >
+                <FaRegWindowClose className="lg:text-2xl sm:text-xl" />
+              </button>
+              {selectedComponent === "EnquiryBoxComponent" && <EnquiryBox />}
             </div>
           </div>
-        )}
-      </header>
+        </div>
+      )}
     </>
   );
 }
