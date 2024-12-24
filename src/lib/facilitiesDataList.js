@@ -1,80 +1,80 @@
 const facilities = [
   {
     label: "Dental X-RAY",
-    href: "/facilities/dental-xray",
+    href: "#",
   },
   {
     label: "Intra-Oral Camera With Screen Display",
-    href: "/facilities/intra-oral-camera-with-screen",
+    href: "#",
   },
   {
     label: "Automatic/Electrical Modern Dental Chair",
-    href: "/facilities/electronic-modern-dental-chair",
+    href: "#",
   },
   {
     label: "Dental Lab Works",
-    href: "/facilities/dental-lab-works",
+    href: "#",
   },
   {
     label:
       "Multiple Dental Units (Chairs) For Simultaneous Treatment Of Multiple Patients At The Same Time",
-    href: "/facilities/multiple-dental-units",
+    href: "#",
   },
   {
     label: "AC Chamber",
-    href: "/facilities/ac-chamber",
+    href: "#",
   },
   {
     label: "All Treatments By A Specialist (MDS) Doctor",
-    href: "/facilities/all-treatments-by-specialist-doctor",
+    href: "#",
   },
   {
     label: "Imported Dental Implant Kit",
-    href: "/facilities/imported-dental-implant-kit",
+    href: "#",
   },
   {
     label: "X-Ray Scanner",
-    href: "/facilities/x-ray-scanner",
+    href: "#",
   },
   {
     label: "LED Hand-Piece",
-    href: "/facilities/led-hand-piece",
+    href: "#",
   },
   {
     label: "Electric Pulp Tester",
-    href: "/facilities/electric-pulp-tester",
+    href: "#",
   },
   {
     label: "RVG With Apex Locator",
-    href: "/facilities/rvg-with-apex-locator",
+    href: "#",
   },
   {
     label: "Rotary Endo",
-    href: "/facilities/rotary-endo",
+    href: "#",
   },
   {
     label: "Laser Surgery",
-    href: "/facilities/laser-surgery",
+    href: "#",
   },
   {
     label: "Endomicroscope",
-    href: "/facilities/endomicroscope",
+    href: "#",
   },
   {
     label: "Autoclave, Glass Bead & UV Sterilization",
-    href: "/facilities/autoclave-glass-bead-and-uv-sterilization",
+    href: "#",
   },
   {
     label: "Electric Pulp Tester",
-    href: "/facilities/electric-pulp-tester",
+    href: "#",
   },
   {
     label: "Tooth Bleaching Device",
-    href: "/facilities/tooth-bleaching-device",
+    href: "#",
   },
   {
     label: "Dental Loop",
-    href: "/facilities/dental-loop",
+    href: "#",
   },
 ];
 
