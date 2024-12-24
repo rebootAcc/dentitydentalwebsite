@@ -1,16 +1,24 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { MdArrowOutward, MdOutlineRemoveRedEye } from "react-icons/md";
 
 export default function BlogCard({ blog }) {
+  const router = useRouter();
+  function handelRedirect(href) {
+    router.push(href);
+  }
   return (
-    <div className="bg-white shadow-custom p-4 h-full flex flex-col w-full gap-3 my-4">
+    <div
+      className="bg-white shadow-custom p-4 h-full flex flex-col w-full gap-3 my-4"
+      onClick={() => handelRedirect(blog.href)}
+    >
       <div>
         <div className="relative min-h-[15rem]">
           <Image
             fill
             src={blog.img}
             alt="blog cover"
-            className=" object-cover !h-[15rem]"
+            className="object-cover !h-[15rem]"
           />
         </div>
       </div>
@@ -29,11 +37,11 @@ export default function BlogCard({ blog }) {
           </span>
         </div>
       </div>
-      <h1 className="text-site-main text-base lg:text-lg font-medium onelinelimit">
+      <h1 className="text-site-main text-base lg:text-lg font-medium line-clamp-1">
         {blog.heading}
       </h1>
       <p
-        className="text-site-typo text-base line-clamp-3"
+        className="text-site-typo text-base line-clamp-2"
         dangerouslySetInnerHTML={{ __html: blog.description }}
       ></p>
       <div className="flex justify-between">

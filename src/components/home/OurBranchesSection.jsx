@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import React from "react";
 import { useEffect, useState } from "react";
 import BranchServiceCard from "../global/BranchServiceCard";
+import { Clinic } from "@/lib/clinicsDataList";
 
 const Slider = dynamic(() => import("react-slick"), {
   ssr: false,
@@ -53,36 +54,13 @@ const OurBranchesSection = () => {
     lazyLoad: "ondemand",
     adaptiveHeight: true,
   };
-  const clinics = [
-    {
-      imgsrc: "/images/clinic.png",
-      label: "Dentity Dental Dum Dum Cantonment",
-      icon: "/images/clinicicon.svg",
-
-      desc: "SBI ATM /Dhaka Sweets, Cantonment 28, Subhas Nagar Rd, near Cantonment Station, Subhash Nagar, Dum Dum, Kolkata, West Bengal 700065",
-    },
-    {
-      imgsrc: "/images/clinic.png",
-      label: "Dentity Dental Dum Dum Cantonment",
-      icon: "/images/clinicicon.svg",
-
-      desc: "SBI ATM /Dhaka Sweets, Cantonment 28, Subhas Nagar Rd, near Cantonment Station, Subhash Nagar, Dum Dum, Kolkata, West Bengal 700065",
-    },
-    {
-      imgsrc: "/images/clinic.png",
-      label: "Dentity Dental Dum Dum Cantonment",
-      icon: "/images/clinicicon.svg",
-
-      desc: "SBI ATM /Dhaka Sweets, Cantonment 28, Subhas Nagar Rd, near Cantonment Station, Subhash Nagar, Dum Dum, Kolkata, West Bengal 700065",
-    },
-    {
-      imgsrc: "/images/clinic.png",
-      label: "Dentity Dental Dum Dum Cantonment",
-      icon: "/images/clinicicon.svg",
-
-      desc: "SBI ATM /Dhaka Sweets, Cantonment 28, Subhas Nagar Rd, near Cantonment Station, Subhash Nagar, Dum Dum, Kolkata, West Bengal 700065",
-    },
-  ];
+  const clinics = Clinic.map((item) => ({
+    imgsrc: item.cover,
+    label: item.label,
+    icon: "/images/clinicicon.svg",
+    desc: item.address,
+    href: item.href,
+  }));
   return (
     <section className="xl:p-16 lg:p-8 p-4 flex flex-col gap-4">
       <section className="flex flex-col gap-1">
@@ -99,7 +77,7 @@ const OurBranchesSection = () => {
       <section className="w-full">
         <Slider {...settings}>
           {clinics.map((item, index) => (
-            <div key={index} className="xl:px-3 px-2">
+            <div key={index} className="xl:px-3 px-2 h-full">
               <BranchServiceCard content={item} />
             </div>
           ))}
