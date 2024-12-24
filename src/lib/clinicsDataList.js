@@ -1,6 +1,6 @@
 const clinics = [
   {
-    label: "Dentity Dental Gariahat (ISO Certified)",
+    label: "Dentity Dental Gariahat - Best Dental Clinic in Kolkata",
     address:
       "Gariahat Market (Old Market), Stall No. G 11, 1st Floor (at Gariahat Crossing), 212 Rashbehari Avenue, Kolkata - 19",
     phone: ["9051553253", "9088182352"],
@@ -15,7 +15,7 @@ const clinics = [
   },
   {
     label:
-      "Dentity Dental Tollygunge Netaji Nagar (ACE Dental Care-2) (ISO Certified)",
+      "Dentity Dental Tollygunge Netaji Nagar (ACE Dental Care-2) - Best Dental Clinic in Kolkata",
     address:
       "256A Netaji Nagar (Gandhi Colony), Netaji Nagar (Near Netaji Nagar Day College, Adjacent to Prena’s Boutique (Opposite Narmada School), Kolkata - 700092",
     phone: ["9051553253", "6291496611"],
@@ -30,7 +30,7 @@ const clinics = [
   },
   {
     label:
-      "Dentity Dental Tollygunge Suryanagar (ACE Dental care) (ISO Certified)",
+      "Dentity Dental Tollygunge Suryanagar (ACE Dental Care) - Best Dental Clinic in Kolkata",
     address:
       "203 A, NSC Bose Road, Suryanagar, Tollygunge, Titli Apartment, Mezzanine Floor, Opposite Tollygunge Homes, Kolkata - 700040",
     phone: ["9051553253", "6291496611"],
@@ -44,7 +44,8 @@ const clinics = [
     navLabel: "Dentity Dental Tollygunge Suryanagar",
   },
   {
-    label: "Dentity Dental Sonarpur ( Relief Dental Clinic) (ISO Certified)",
+    label:
+      "Dentity Dental Sonarpur  (Relief Dental Clinic) - Best Dental Clinic in Kolkata",
     address:
       "Sonarpur H.C Sarani, Deshbandhu Park, (Near Khadim, Sishu Niketan's Lane), Kolkata - 700150",
     phone: ["9051553253", "6291401067"],
@@ -59,7 +60,7 @@ const clinics = [
   },
   {
     label:
-      "Dentity Dental Dum Dum Cantonment (Modern Dental Clinic) (ISO Certified)",
+      "Dentity Dental Dum Dum Cantonment (Modern Dental Clinic)-Best Dental Clinic in Kolkata",
     address:
       "Dum Dum Cantonment, 28, Subhas Nagar Road, (Near Cantonment Station/SBI ATM/Dhaka Sweets/Super Market) Kolkata-700065",
     phone: ["9051553253", "8017736704"],
@@ -74,7 +75,7 @@ const clinics = [
   },
   {
     label:
-      "Dentity Dental Rajarhat Teghoria Newtown (Modern Dental World -2)(ISO certified)",
+      "Dentity Dental Rajarhat Teghoria Newtown (Modern Dental World - 2)-Best Dental Clinic in Kolkata",
     address:
       "Abantika Apartment, Shop No G3, Ground floor, T/98 Rajarhat Road (Opposite Lokenath Mandir, Adjacent to WBSEDCL Electricity Office), Kolkata - 700157",
     phone: ["9051553253", "9073953253"],
@@ -89,7 +90,7 @@ const clinics = [
   },
   {
     label:
-      "Dentity Dental Teghoria (ISO certified) ( Dr. S Paul's Modern Dental World)",
+      "Dentity Dental Teghoria (Dr. S Paul’s Modern Dental World)-Best Dental Clinic in Kolkata",
     address:
       "Teghoria (VIP Road), 21 Teghoria Main Road, Deepsikha Apartment (Ground Floor), Kolkata - 700157",
     phone: ["9051553253", "8017736586"],
@@ -103,7 +104,7 @@ const clinics = [
     navLabel: "Dentity Dental Teghoria",
   },
   {
-    label: "Dentity Dental Beleghata CIT More (ISO Certified)",
+    label: "Dentity Dental Beleghata CIT More -Best Dental Clinic in Kolkata",
     address:
       "P 44 CIT Road/Hemchandra Naskar Road, (Opposite Beliaghata Police Station), Kolkata - 700010",
     phone: ["9051553253", "700365062"],
@@ -117,7 +118,7 @@ const clinics = [
     navLabel: "Dentity Dental Beleghata",
   },
   {
-    label: "Dr. Saikat Paul (Dental Mid World) (ISO Certified)",
+    label: "Dr. Saikat Paul (Dental Mid World) -Best Dentist in Midnapore",
     address:
       "Rabindranagar, Opposite Arobindo Statidum, Gate No. 1, Near Nirnoy Hospital, Midnapur Town, Pin 721101",
     phone: ["9051553253", "9800672646"],

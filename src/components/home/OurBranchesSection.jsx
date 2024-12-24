@@ -17,10 +17,10 @@ const OurBranchesSection = () => {
         setSlidesToShow(1);
         setAutoplayMode(true);
       } else if (window.innerWidth <= 600) {
-        setSlidesToShow(1);
+        setSlidesToShow(2);
         setAutoplayMode(true);
       } else if (window.innerWidth <= 860) {
-        setSlidesToShow(2);
+        setSlidesToShow(3);
         setAutoplayMode(true);
       } else if (window.innerWidth <= 1024) {
         setSlidesToShow(3);
