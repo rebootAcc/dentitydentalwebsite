@@ -1,6 +1,7 @@
 import { Clinic } from "@/lib/clinicsDataList";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
+import BranchServiceCard from "../global/BranchServiceCard";
 
 const Slider = dynamic(() => import("react-slick"), {
   ssr: false,
@@ -40,12 +41,19 @@ export default function RelatedClinics({ currentQuery }) {
     arrows: false,
     centerPadding: "20px",
     lazyLoad: "ondemand",
-    adaptiveHeight: true,
   };
 
   const relatedClinics = Clinic.filter(
     (clinic) => !clinic.href.includes(currentQuery)
   );
+
+  const clinics = relatedClinics.map((item) => ({
+    imgsrc: item.cover,
+    label: item.label,
+    icon: "/images/clinicicon.svg",
+    desc: item.address,
+    href: item.href,
+  }));
 
   return (
     <section className="flex flex-col relative gap-4 lg:gap-9 p-4 lg:p-8 xl:p-16">
@@ -58,6 +66,15 @@ export default function RelatedClinics({ currentQuery }) {
         that can change the world. So in our DENTITY DENTAL Clinics we create a
         confident smile for you.
       </h3>
+      <section className="w-full">
+        <Slider {...settings}>
+          {clinics.map((item, index) => (
+            <div key={index} className="xl:px-3 px-2">
+              <BranchServiceCard content={item} />
+            </div>
+          ))}
+        </Slider>
+      </section>
     </section>
   );
 }

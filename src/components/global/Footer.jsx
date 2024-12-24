@@ -222,9 +222,9 @@ export default function Footer() {
                 { label: "Media", href: "/gallery" },
                 { label: "Awards", href: "/awards" },
                 { label: "Contact Us", href: "/contact-us" },
-                { label: "Patient Corner", href: "/patient-corner" },
-                { label: "Online Consult", href: "/online-consult" },
-                { label: "Pay Online", href: "/pay-online" },
+                { label: "Patient Corner", href: "/pdfs/Bengali Version.pdf" },
+                { label: "Online Consult", href: "/contact-us" },
+                { label: "Pay Online", href: "#" },
               ].map((link, key) => (
                 <li key={key}>
                   <Link
