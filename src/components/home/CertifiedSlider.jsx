@@ -17,7 +17,10 @@ export default function CertifiedSlider() {
       } else if (window.innerWidth <= 600) {
         setSlidesToShow(2);
         setAutoplayMode(false);
-      } else if (window.innerWidth <= 860) {
+      } else if (window.innerWidth <= 768) {
+        setSlidesToShow(3);
+        setAutoplayMode(false);
+      } else if (window.innerWidth <= 1000) {
         setSlidesToShow(4);
         setAutoplayMode(false);
       } else {
@@ -78,8 +81,8 @@ export default function CertifiedSlider() {
             key={index}
             className="w-full !flex justify-center items-center "
           >
-            <div className="w-[95%] flex flex-col gap-2  justify-center items-center bg-site-gray h-20 lg:h-40">
-              <section className="w-full h-[4rem] relative ">
+            <div className="w-[95%] flex flex-col gap-2  justify-center items-center bg-site-gray h-[6rem] md:h-[8rem] lg:h-40">
+              <section className="w-full h-[2rem] md:h-[4rem] relative ">
                 <Image
                   src={item.icon}
                   alt=""
@@ -87,7 +90,7 @@ export default function CertifiedSlider() {
                   className="w-full object-contain"
                 />
               </section>
-              <h1 className="xlg:text-lg lg:text-base text-sm font-medium line-clamp-2 text-[#222222] text-center">
+              <h1 className="xlg:text-lg lg:text-base md:text-sm text-xs font-medium line-clamp-2 text-[#222222] text-center">
                 {item.name}
               </h1>
             </div>

@@ -1,6 +1,7 @@
 import Footer from "@/components/global/Footer";
 import NavBar from "@/components/global/Navbar";
 import Head from "next/head";
+import CallWithUs from "./CallWithUs";
 
 export default function WebsiteTemplate({ children, title, description }) {
   return (
@@ -13,6 +14,7 @@ export default function WebsiteTemplate({ children, title, description }) {
       <div className="lg:mt-[6.5rem] md:mt-[4.5rem] mt-[3.5rem]">
         {children}
       </div>
+      <CallWithUs />
       <Footer />
     </>
   );

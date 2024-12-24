@@ -10,16 +10,18 @@ export default function TreatMentAbout({ title, description, cover }) {
           {title}
         </h1>
         <h3 className="text-site-typo md:text-lg text-base">{description}</h3>
-        <div className="flex flex-col md:flex-row justify-between gap-6">
+        <div className="flex flex-col md:flex-row justify-between gap-4 lg:gap-6">
           {cover.map((item, index) => (
-            <Image
-              src={item}
-              alt={title}
-              width={373}
-              key={index}
-              height={144}
-              className="flex-1"
-            />
+            <div className="md:w-[50%] w-full">
+              <Image
+                src={item}
+                alt={title}
+                width={373}
+                key={index}
+                height={144}
+                className="w-full"
+              />
+            </div>
           ))}
         </div>
         <WhyChooseUsSection />

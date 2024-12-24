@@ -75,9 +75,9 @@ export default function NavBar() {
       })),
     },
 
-    { name: "Media", link: "/gallery" },
+    { name: "Media", link: "/media" },
 
-    { name: "Awards", link: "/gallery" },
+    { name: "Awards", link: "/awards" },
 
     { name: "Blogs", link: "/blogs" },
 
