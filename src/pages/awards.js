@@ -5,10 +5,22 @@ import React from "react";
 
 const Awards = () => {
   const awards = [
-    "/images/govornor-awards.jpg",
-    "/images/govornor-awards2.jpg",
-    "/images/toi-article.jpg",
-    "/images/toi-awards.jpg",
+    {
+      imgsrc: "/images/govornor-awards.jpg",
+      name: "Best Dental Clinic Chain in West Bengal 2023 Award by Honorable Governor of West Bengal",
+    },
+    {
+      imgsrc: "/images/govornor-awards2.jpg",
+      name: "Best Dental Clinic Chain in West Bengal 2023 Award by Honorable Governor of West Bengal",
+    },
+    {
+      imgsrc: "/images/toi-article.jpg",
+      name: "Times Of India Featured Dentity Dental for Excellent Services ",
+    },
+    {
+      imgsrc: "/images/toi-awards.jpg",
+      name: "Times of India Health Survery 2023 , Ranking First in Best Dental Clinic in East India",
+    },
   ];
   return (
     <WebsiteTemplate
@@ -21,14 +33,17 @@ const Awards = () => {
       <section className="xl:p-16 lg:p-8 p-4">
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
           {awards.map((item, index) => (
-            <div className="" key={index}>
+            <div className="flex flex-col gap-2" key={index}>
               <Image
-                src={item}
+                src={item.imgsrc}
                 alt="Awards"
                 width={1000}
                 height={563}
                 className="w-full rounded-sm shadow-custom"
               />
+              <div className="lg:text-base text-sm text-site-typo">
+                {item.name}
+              </div>
             </div>
           ))}
         </section>

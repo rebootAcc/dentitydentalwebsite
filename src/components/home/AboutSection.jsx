@@ -47,7 +47,7 @@ const AboutSection = () => {
               className=" w-full rounded-sm h-[95%] object-cover "
             />
             <h1 className="lg:text-2xl text-lg font-semibold h-[5%] text-site-text ">
-              Most Affordable Dental Clinic In Kolkata
+              Times of India Health Survey Ranking 2023
             </h1>
           </section>
           <section className="h-[60%] flex flex-col gap-4">
@@ -77,7 +77,7 @@ const AboutSection = () => {
                 {item.heading}
               </h1>
               <p
-                className="text-site-typo text-xs/[17px] lg:text-sm/[21px] xlg:text-base/[26px]"
+                className="text-site-typo text-sm lg:text-sm/[21px] xlg:text-base/[26px]"
                 dangerouslySetInnerHTML={{ __html: item.text }}
               ></p>
             </div>
