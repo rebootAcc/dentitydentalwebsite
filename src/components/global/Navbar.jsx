@@ -236,7 +236,7 @@ export default function NavBar() {
                           <Link
                             key={i}
                             href={item.link}
-                            className={`flex p-1 xlg:p-2 text-xs xlg:text-sm hover:text-site-main hover:bg-gray-200 basis-1/12 ${
+                            className={`flex p-1 xlg:p-2 px-4 xlg:px-6 text-xs xlg:text-sm hover:text-site-main hover:bg-gray-200 basis-1/12 ${
                               isActiveRoute(item.link)
                                 ? "bg-gray-200 text-site-main"
                                 : "text-site-typo"
