@@ -77,7 +77,7 @@ const AboutSection = () => {
                 {item.heading}
               </h1>
               <p
-                className="text-site-typo text-xs/[17px] lg:text-sm/[21px] xlg:text-base/[26px]"
+                className="text-site-typo text-sm lg:text-sm/[21px] xlg:text-base/[26px]"
                 dangerouslySetInnerHTML={{ __html: item.text }}
               ></p>
             </div>
