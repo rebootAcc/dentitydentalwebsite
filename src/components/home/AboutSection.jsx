@@ -38,7 +38,7 @@ const AboutSection = () => {
           className="flex flex-col gap-6 w-full md:w-[50%]"
           style={{ height: isSmallScreen ? "auto" : `${contentHeight}px` }}
         >
-          <section className="flex flex-col gap-3 h-[40%]">
+          <section className="flex flex-col gap-3 h-[50%]">
             <Image
               src={"/images/toi-about.jpg"}
               alt="about us"
@@ -46,11 +46,11 @@ const AboutSection = () => {
               width={801}
               className=" w-full rounded-sm h-[95%] object-cover "
             />
-            <h1 className="lg:text-2xl text-lg font-semibold h-[5%] text-site-text ">
+            <h1 className="lg:text-xl text-base font-semibold h-[5%] text-site-text ">
               Times of India Health Survey Ranking 2023
             </h1>
           </section>
-          <section className="h-[60%] flex flex-col gap-4">
+          <section className="h-[50%] flex flex-col gap-2">
             <Image
               src={"/images/gov-about.jpg"}
               alt="about us"
