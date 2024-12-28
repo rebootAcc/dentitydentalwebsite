@@ -87,12 +87,13 @@ const AboutSection = () => {
       <section className="flex flex-col md:flex-row gap-4 xlg:gap-8">
         <section className="lg:w-[50%] w-full">
           <p className="lg:text-base xlg:text-[17px]/[25px] md:text-sm text-site-typo text-xs/[17px]">
-            Dr. Saikat Paul (Consultant Oral, Dental Surgeon & Maxillofacial
-            Prosthodontist Founder cum Owner of Dentity Dental (150 certified,
-            Best multispeciality dental chain clinic in Kolkata & West Bengal as
-            per Times Of India Health Survey) Receiving Award from honourable
-            governor (Shri C.V. Ananda Bose) of West Bengal for professional and
-            academic excellance in Health Care Sector.
+            Dr. Saikat Paul &#40;Consultant Oral, Dental Surgeon & Maxillofacial
+            Prosthodontist Founder cum Owner of Dentity Dental &#40;ISO
+            certified, Best multispeciality dental chain clinic in Kolkata &
+            West Bengal as per Times Of India Health Survey&#41; Receiving Award
+            from honourable governor &#40;Shri C.V. Ananda Bose&#41; of West
+            Bengal for professional and academic excellance in Health Care
+            Sector.
           </p>
         </section>
         <section className="lg:w-[50%] w-full">
