@@ -67,19 +67,27 @@ const AboutPageDesign = () => {
             specialist dentists.
           </p>
           <h1 className="text-site-main text-xl lg:text-2xl xlg:text-3xl font-semibold">
-            Why Choose Dentity Dental?
+            Why Choose Dentity Dental- The trusted Smile Partners For you in
+            Kolkata
           </h1>
           <p className="text-site-typo text-xs/[17px] lg:text-sm/[21px] xlg:text-base/[26px]">
-            <strong> Experienced and Skilled Dentists:</strong> Dentity Dental
-            has the industry expertise Dentists for you & your family's complete
-            teeth care. <br /> <strong>Multispeciality Clinic:</strong> Dentity
-            Dental is multispeciality Dental Claim Chain in Kolkata, provides
-            all kinds of Dental Services under one roof. <br />{" "}
-            <strong>Complete Dental Services: </strong> Whether you need a
-            routine check-up, cosmetic dentistry, orthodontics, or facial
-            treatments, Dentity Dental Offers wide range of Dental Treatment
-            services. <br /> <strong>Trusted and Awarded: </strong> As an ISO
-            certified brand awarded by the Governor of West Bengal, and ranked
+            <strong>Experience and Skill that sets us apart: </strong> We hold
+            the expertise to cater to the dentistry needs of your entire family
+            due to our wholesome experience in the field. Our skills truly make
+            us the people's favorites! <br />{" "}
+            <strong>Multispecialty brings more to YOU!:</strong> Our
+            multispecialty clinic ensures that we are the one-stop solution for
+            everything dental that you might ever need under the sun! <br />{" "}
+            <strong>360-degree Dental Solutions:</strong> Our chain of dental
+            clinics in Kolkata further ensures that no matter your location, we
+            are closer to you than ever before! <br />{" "}
+            <strong>Worth Your Trust:</strong> Awarded as a trusted Dental
+            clinic by the Governor of the state and the Times of India Health
+            survey, we are an ISO-certified brand eligible for all your faith!{" "}
+            <br /> <strong> Care and Warmth: </strong> Every staff and expert at
+            the clinic is meant to make your journey smoother! We bet you will
+            end up making friends by the time you exit the clinic, we are that
+            warm !
           </p>
         </div>
         <WhyChooseUsSection />
