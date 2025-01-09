@@ -1,6 +1,11 @@
 const clinics = [
   {
-    label: "Dentity Dental Gariahat - Best Dental Clinic in Kolkata",
+    metatitle: "Dentity Dental is the best dental clinic in Gariahat",
+    metadescription:
+      "Dentity Dental is the best dental clinic in Gariahat, much as well as absolutely comprehensive emphasis is placed on oral health and wellness here. We are situated right at the heart of Gariahat, offering advanced dental services for individuals as well as families. We're your perfect partner for a healthy and happy smile.",
+    label: "Dentity Dental Gariahat - Best Dental Clinic in Gariahat",
+    description:
+      "Dentity Dental is the best dental clinic in Gariahat, much as well as absolutely comprehensive emphasis is placed on oral health and wellness here. We are situated right at the heart of Gariahat, offering advanced dental services for individuals as well as families. We're your perfect partner for a healthy and happy smile. <br/> Dentity Dental is a dental clinic near Gariahat that emphasizes prevention of dental problems as well as restoration of teeth and smiles through advanced interventions like root canals, orthodontics, and dental implants. Our experienced dental professionals and support personnel provide utmost individualized and tailored care to each patient, making sure that all individuals will feel really valued and comfortable indeed. We deliver optimal diagnoses and efficacious treatments that not only enhance aesthetics but work effectively using state-of-the-art technology and absolutely & totally modern methodologies. We provide complete enhanced services with a personal care and touch. <br/> Our group is comprises of a team of highly experienced dental practitioners offering customized treatment plans. Hygiene is our topmost and foremost priority. We are amongst the very best in the town. Our primary and main focus is essentially in developing our relationship with our esteemed patients. So choose Dentity Dental for a stress-free, longlasting, and a superb smile.",
     address:
       "Gariahat Market (Old Market), Stall No. G 11, 1st Floor (at Gariahat Crossing), 212 Rashbehari Avenue, Kolkata - 19",
     phone: ["9051553253", "9088182352"],
@@ -14,10 +19,15 @@ const clinics = [
     navLabel: "Dentity Dental Gariahat",
   },
   {
+    metatitle: "Best dental clinic in Netaji Nagar",
+    metadescription:
+      "Dentity Dental is your trusted destination for superior oral health services, recognized as the best dental clinic in Netaji Nagar. Our clinic is accessible and designed to care for patients of all age groups with high-quality prime services. It takes proper and accurate care of your dental needs. So no doubt it's the best dentistry in your neighborhood",
     label:
-      "Dentity Dental Tollygunge Netaji Nagar (ACE Dental Care-2) - Best Dental Clinic in Kolkata",
+      "Dentity Dental Tollygunge Netaji Nagar (ACE Dental Care-2) - Best Dental Clinic in Netaji Nagar",
+    description:
+      "Dentity Dental is your trusted destination for superior oral health services, recognized as the best dental clinic in Netaji Nagar. Our clinic is accessible and designed to care for patients of all age groups with high-quality prime services. It takes proper and accurate care of your dental needs. So no doubt it's the best dentistry in your neighborhood <br/> Our offerings range from proper cleanse, orthodontics, restorative dentistry, and cosmetic implants to dental surgery. We have some of the best dentists in town, with top qualifications in dentistry. For us each patient is unique as well as special, and we take care of you all with utmost care. Our treatments are at par with recent machineries and processes, and we look into that you get the best treatment at best prices. We offer and provide absolutely top-notch treatments for your teeth. <br/> Our team of top dentists pay critical care to each and every client of ours. We take each case very seriously and thus are the best dental clinic in Netaji Nagar. As one of the most trustable dental clinic near Netaji Nagar, we strive towards achieving perfection for the ideal smile you have always desired for. For an unparalleled and unmatched experience in dentistry, visit Dentity Dental today where your journey to optimal oral health begins!",
     address:
-      "256A Netaji Nagar (Gandhi Colony), Netaji Nagar (Near Netaji Nagar Day College, Adjacent to Prena’s Boutique (Opposite Narmada School), Kolkata - 700092",
+      "256A Netaji Nagar (Gandhi Colony), Netaji Nagar (Near Netaji Nagar Day College, Adjacent to Prena's Boutique (Opposite Narmada School), Kolkata - 700092",
     phone: ["9051553253", "6291496611"],
     whatsapp: "9051553253",
     timing: "Monday - Saturday (09:00 AM - 09:00 PM)",
@@ -29,8 +39,13 @@ const clinics = [
     navLabel: "Dentity Dental Tollygunge Netaji Nagar",
   },
   {
+    metatitle: "Best Dental Clinic in Tollygunge Suryanagar",
+    metadescription:
+      "Dentity Dental Tollygunge Suryanagar (ACE Dental Care) is the Best Dental Clinic in Suryanagar offering high-quality dental care services for the comfort of the patients with updated technology. Serving patients in Tollygunge and its surroundings, the clinic is situated at 203/A, NSC Bose Road, Suryanagar, Tollygunge, on the mezzanine floor of Titli Apartment, near Tollygunge Homes, Kolkata - 700 040.",
     label:
-      "Dentity Dental Tollygunge Suryanagar (ACE Dental Care) - Best Dental Clinic in Kolkata",
+      "Dentity Dental Tollygunge Suryanagar (ACE Dental Care) - Best Dental Clinic in Tollygunge Suryanagar",
+    description:
+      "Dentity Dental Tollygunge Suryanagar (ACE Dental Care) is the Best Dental Clinic in Suryanagar offering high-quality dental care services for the comfort of the patients with updated technology. Serving patients in Tollygunge and its surroundings, the clinic is situated at 203/A, NSC Bose Road, Suryanagar, Tollygunge, on the mezzanine floor of Titli Apartment, near Tollygunge Homes, Kolkata - 700 040. <br/> The clinic provides a very diversified as well as an absolutely comprehensive range of treatments, such as smile design, gum depigmentation, oral cosmetic plastic surgery, and many more. People with high smile lines or hyperpigmented gums who want to rectify their smile and feel more confident can go for this specific treatment. Other services at our Dental Clinic Near Suryanagar include many other avant-garde contemporary Dental related treatments of the very highest class & caliber. <br/> The clinic offers careful and meticulous treatment for any cosmetic or functional dentistry requirements and is thus one of the most sought-after dental clinics near Suryanagar.",
     address:
       "203 A, NSC Bose Road, Suryanagar, Tollygunge, Titli Apartment, Mezzanine Floor, Opposite Tollygunge Homes, Kolkata - 700040",
     phone: ["9051553253", "6291496611"],
@@ -44,8 +59,14 @@ const clinics = [
     navLabel: "Dentity Dental Tollygunge Suryanagar",
   },
   {
+    metatitle: "Best Dental clinic in Sonarpur ",
+    metadescription:
+      "Dentity Dental is recognized as one of the best Dental clinic in Sonarpur, offering a broad spectrum of sophisticated dental care services at an affordable cost to our patients in a clean and disinfected ambiance. Located at Sonarpur H.C Sarani, near Deshbandhu Park, Kolkata - 700150, the clinic has gained a reputation for ethical and affordable dental treatment.",
     label:
-      "Dentity Dental Sonarpur  (Relief Dental Clinic) - Best Dental Clinic in Kolkata",
+      "Dentity Dental Sonarpur  (Relief Dental Clinic) - Best Dental Clinic in Sonarpur",
+    description:
+      "Dentity Dental is recognized as one of the best Dental clinic in Sonarpur, offering a broad spectrum of sophisticated dental care services at an affordable cost to our patients in a clean and disinfected ambiance. Located at Sonarpur H.C Sarani, near Deshbandhu Park, Kolkata - 700150, the clinic has gained a reputation for ethical and affordable dental treatment. <br/> Some of the treatments offered by the clinic include smile designing, endodontic treatment or root canal treatment, ultrasonic scaling, crowning and fixed dental prostheses such as metal, PFM, full ceramic etc. Other special services include dental implant, oral and maxillofacial surgeries, and cosmetic intraoral surgeries. Their team makes it easy for clients by providing treatment services that include wisdom tooth surgery, laser surgeries, and other minimally invasive procedures. Dentity Dental Clinic Near Sonarpur uses state-of-the-art equipment such as autoclave sterilization method and portable dental X-ray machines.  <br/> The clinic is famous for the dental services that they offer such as children dentistry, gum depigmentation and treatment of uneven teeth therefore making it the best Dental clinic in Sonarpur for families. Operating Monday to Saturday Dentity Dental Clinic Near Sonarpur is open 24 hours a day, 7 days a week from 9:00 AM to 9:00 PM. You can reach us today at +91 9051553253 or +91 6291401067 to book a convenient appointment and get the best dental solution for yourself.",
+
     address:
       "Sonarpur H.C Sarani, Deshbandhu Park, (Near Khadim, Sishu Niketan's Lane), Kolkata - 700150",
     phone: ["9051553253", "6291401067"],
@@ -59,8 +80,14 @@ const clinics = [
     navLabel: "Dentity Dental Sonarpur",
   },
   {
+    metatitle: "Best Dental Clinic in Dumdum",
+    metadescription:
+      "It's been a couple of years, people have seen the emergence of multi specialty clinics across Kolkata, however people still find it hard to find a trusted Dental Clinic Near Dumdum. To put an end to the problem forever, Dentity Dental brings you a comprehensive range of services under one roof. ",
     label:
-      "Dentity Dental Dum Dum Cantonment (Modern Dental Clinic)-Best Dental Clinic in Kolkata",
+      "Dentity Dental Dum Dum Cantonment (Modern Dental Clinic)-Best Dental Clinic in Dumdum",
+    description:
+      "It's been a couple of years, people have seen the emergence of multi specialty clinics across Kolkata, however people still find it hard to find a trusted Dental Clinic Near Dumdum. To put an end to the problem forever, Dentity Dental brings you a comprehensive range of services under one roof. Together with skilled dental professionals and state-of-the-art facilities, we have earned the trust of our clients, which makes us stand out amid hundreds of dental clinics across the city.  <br/> We offer world class treatment at affordable prices at Dentity Dental. Be it cosmetic dentistry orthodontics, preventive care; or restorative treatments. Our priority lies in your comfort and the value that we offer to the clients. Our clinic in Dumdum cantonment is equipped with advanced equipments that deliver pain-free and efficient treatments for your specific requirements. These qualities have helped us earn the crown of the Best Dental Clinic in Dumdum, located conveniently near Dum Dum Subhasnagar High School.  </br> If you are searching for the Best Dental Clinic in Dumdum you should without a shadow of doubt visit Dentity Dental to see how we ensure the highest standards of hygiene and patient care. Book your appointment today and take the first step towards a healthier and a more beautiful smile.",
+
     address:
       "Dum Dum Cantonment, 28, Subhas Nagar Road, (Near Cantonment Station/SBI ATM/Dhaka Sweets/Super Market) Kolkata-700065",
     phone: ["9051553253", "8017736704"],
@@ -74,8 +101,14 @@ const clinics = [
     navLabel: "Dentity Dental Dum Dum Cantonment",
   },
   {
+    metatitle: "Best Dental Clinic in Newtown",
+    metadescription:
+      "Are you tired of searching for a great dental clinic near Newtown? Well your search ends here at Dentity Dental, a one stop destination in New Town for anything related to oral health. You might have seen mushrooming clinics all over the city, but very few among them has remained able then to earn the trust.",
     label:
-      "Dentity Dental Rajarhat Teghoria Newtown (Modern Dental World - 2)-Best Dental Clinic in Kolkata",
+      "Dentity Dental Rajarhat Teghoria Newtown (Modern Dental World - 2)-Best Dental Clinic in Newtown",
+    description:
+      "Are you tired of searching for a great dental clinic near Newtown? Well your search ends here at Dentity Dental, a one stop destination in New Town for anything related to oral health. You might have seen mushrooming clinics all over the city, but very few among them has remained able then to earn the trust. At Dentity Dental, we aim to cater our clients in best possible ways. From facilitating advanced equipments to availing hands-on assistance from the top-notch doctors and medical professionals, we have set a benchmark with our exceptional treatment and care.  <br/> At Dentity Dental we consider every smile precious, and we are committed to bring big smiles on your faces. Apart from being really class apart indeed in terms of treatment, our friendly staffs will try to make your visit absolutely hassle-free. Whether you are looking for a place to have advanced cosmetic dentistry, routine check-ups, restorative treatments or orthodontics, you can avail all under the same roof. Dentity Dental is often considered to be the best dental clinic in Newtown as we are committed to ensure the best outcome with absolute personalized care.</br> So whether it's a simple cleaning or complex surgery, book your appointment today and experience the difference right away. ",
+
     address:
       "Abantika Apartment, Shop No G3, Ground floor, T/98 Rajarhat Road (Opposite Lokenath Mandir, Adjacent to WBSEDCL Electricity Office), Kolkata - 700157",
     phone: ["9051553253", "9073953253"],
@@ -89,8 +122,14 @@ const clinics = [
     navLabel: "Dentity Dental Rajarhat Teghoria",
   },
   {
+    metatitle: "Best dental clinic in Teghoria",
+    metadescription:
+      "While a smile is infectious, we at Dentity Dental Clinic believe dental diseases are far more infectious! In order to fix your smile and help you get your unparalleled and unmatched aura back, visit the best dental clinic in Teghoria. Be it smile designing, root canal, ultrasonic scaling or bridge fix-work, we are reputed for delivering the very best of services as a dental clinic near Teghoria.",
     label:
-      "Dentity Dental Teghoria (Dr. S Paul’s Modern Dental World)-Best Dental Clinic in Kolkata",
+      "Dentity Dental Teghoria (Dr. S Paul's Modern Dental World)-Best Dental Clinic in Teghoria",
+    description:
+      "The best ornament that fits every face is “Smile”. Nothing can match the beauty of a full big great smile, for and as it leaves anyone and everyone in much joy. Be it an onlooker or your loved one, no one out there would complain if you presented your beautiful smile to them! <br/> While a smile is infectious, we at Dentity Dental Clinic believe dental diseases are far more infectious! In order to fix your smile and help you get your unparalleled and unmatched aura back, visit the best dental clinic in Teghoria. Be it smile designing, root canal, ultrasonic scaling or bridge fix-work, we are reputed for delivering the very best of services as a dental clinic near Teghoria. <br/> Every patient at our clinic leaves with a smile or comes back with one! This is an assurance from our uber-experienced smile specialists who are right at the very foundation of this eminent dental clinic near Teghoria. Come, step in and witness the state-of-the-art and avant-garde equipment and welcoming experts at your service at the Best dental clinic in Teghoria! We believe in excelling at client satisfaction and hence we are one of the most recommended dental clinic near Teghoria.",
+
     address:
       "Teghoria (VIP Road), 21 Teghoria Main Road, Deepsikha Apartment (Ground Floor), Kolkata - 700157",
     phone: ["9051553253", "8017736586"],
@@ -104,7 +143,13 @@ const clinics = [
     navLabel: "Dentity Dental Teghoria",
   },
   {
-    label: "Dentity Dental Beleghata CIT More -Best Dental Clinic in Kolkata",
+    metatitle: "Best Dental Clinic in Beleghata",
+    metadescription:
+      "The one goal that has been consistent for us is to help you achieve your dream smile anytime as well as everytime! Spanning across multiple locations in the great City of Joy Kolkata, the core of our dedication is just helping you “smile better”. We are touted as the best dental clinic in Beleghata.",
+    label: "Dentity Dental Beleghata CIT More -Best Dental Clinic in Beleghata",
+    description:
+      "The one goal that has been consistent for us is to help you achieve your dream smile anytime as well as everytime! Spanning across multiple locations in the great City of Joy Kolkata, the core of our dedication is just helping you “smile better”. We are touted as the best dental clinic in Beleghata, and don't go by our words because this is a title that is conferred to us by our clients in the area! <br/> Be it the most complex dentistry process, or may be a simple tooth extraction, Dr. S. Paul and the team make sure that it ends up being a joyride for the patient. Our dental clinic near Beleghata, is adept in delivering premium quality services such as dental implants, laser treatment and smile redesigning and lots more. <br/> Dentity Dental has been a name synonymous to trust when it comes to dental clinic near Beleghata. Our warm bond with every smile holder we ever came across makes us truly the best dental clinic in Bleghata. Are you worried about your smile fading away? Let's connect and we will be happy to fetch it back for you! Let the experts take the action role, as you just sit back and relax!",
+
     address:
       "P 44 CIT Road/Hemchandra Naskar Road, (Opposite Beliaghata Police Station), Kolkata - 700010",
     phone: ["9051553253", "700365062"],
@@ -118,7 +163,14 @@ const clinics = [
     navLabel: "Dentity Dental Beleghata",
   },
   {
-    label: "Dr. Saikat Paul (Dental Mid World) -Best Dentist in Midnapore",
+    metatitle: "Best Dental Clinic in Midnapore",
+    metadescription:
+      "Are you on the search mode for the best dental clinic center in Midnapore? Then come to Dental Mid World, the clinic managed by Dr. Saikat Paul, the best dentist in Midnapore. Located at Rabindranagar, this clinic stands in front of Aurobindo Stadium (Gate No 1) and beside Nirnoy Hospital, where the clinic offers absolutely authoritative and high-class complete & comprehensive dental treatment and care.",
+    label:
+      "Dr. Saikat Paul (Dental Mid World) -Best Dental Clinic in Midnapore",
+    description:
+      "Are you on the search mode for the best dental clinic center in Midnapore? Then come to Dental Mid World, the clinic managed by Dr. Saikat Paul, the best dentist in Midnapore. Located at Rabindranagar, this clinic stands in front of Aurobindo Stadium (Gate No 1) and beside Nirnoy Hospital, where the clinic offers absolutely authoritative and high-class complete & comprehensive dental treatment and care. It is without a shadow of doubt one of the if not the very Best Dental Clinic in Midnapore. <br/> As an oral cosmetic plastic surgeon, Dr. Paul delivers highly effective procedures such as gum depigmentation. This procedure is recommended for those with high smile lines and black or excessively pigmented gums, who want that bright and beautiful smile back. Dr. Paul's predominant goal is and happens to be delivering efficient, safe, and complete comprehensive services. <br/> Dental Mid World is dedicated to providing efficient and professional dental treatments and beauty with a passion for patient care and advanced technology and skills. For a better and brighter smile, it is high time to select the premier dental clinic near Midnapore!",
+
     address:
       "Rabindranagar, Opposite Arobindo Statidum, Gate No. 1, Near Nirnoy Hospital, Midnapur Town, Pin 721101",
     phone: ["9051553253", "9800672646"],

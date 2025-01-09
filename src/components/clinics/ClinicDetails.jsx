@@ -18,7 +18,10 @@ export default function ClinicDetails({
         <h1 className="text-lg md:text-3xl font-medium text-site-main">
           {title}
         </h1>
-        <h3 className="text-site-typo md:text-lg text-base">{description}</h3>
+        <h3
+          className="text-site-typo md:text-lg text-base"
+          dangerouslySetInnerHTML={{ __html: description }}
+        ></h3>
         <div className="flex flex-col gap-5 md:gap-3">
           <h1 className="text-base md:text-2xl font-medium text-site-main">
             Details

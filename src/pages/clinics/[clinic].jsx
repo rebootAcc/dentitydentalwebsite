@@ -20,10 +20,7 @@ export default function Clinic({
 }) {
   const router = useRouter();
   return (
-    <WebsiteTemplate
-      title="Our Clinics"
-      description="Dentity Dental designed & developed by Reboot AI Private Limited"
-    >
+    <WebsiteTemplate title={metatitle} description={metadescription}>
       <SubBanner heading="Our Clinics" />
       <ClinicDetails
         title={title}
@@ -58,13 +55,10 @@ export const getStaticProps = async ({ params }) => {
   const clinicData = AllClinic.reduce((acc, item) => {
     const key = item.href.split("/")[2];
     acc[key] = {
-      metatitle:
-        "Website Development Company in Kolkata - Custom Website Development",
-      metadescription:
-        "Looking for an experienced custom website development company to build a unique online presence with Reboot AI's Custom Website Development services.",
+      metatitle: item.metatitle,
+      metadescription: item.metadescription,
       title: item.label,
-      description:
-        "This process comes under oral cosmetic plastic surgery. Persons with high smile line if have black or hyperpigmented gum & by profession or by passion have the urge to get a beautiful smile prefer to undergo this process.Gum depigmentation",
+      description: item.description,
       cover: item.cover,
       href: item.href,
       address: item.address,

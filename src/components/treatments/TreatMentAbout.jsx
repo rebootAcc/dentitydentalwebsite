@@ -7,7 +7,7 @@ export default function TreatMentAbout({ title, description, cover }) {
     <section className="flex flex-col relative md:flex-row gap-4 lg:gap-9 p-4 lg:p-8 xl:p-16">
       <section className="flex flex-col gap-2 lg:gap-7 w-full md:w-[60%]">
         <h1 className="text-lg md:text-3xl font-medium text-site-main">
-          {title}
+          {title} Treatment In Kolkata
         </h1>
         <h3 className="text-site-typo md:text-lg text-base">{description}</h3>
         <div className="flex flex-col md:flex-row justify-between gap-4 lg:gap-6">
