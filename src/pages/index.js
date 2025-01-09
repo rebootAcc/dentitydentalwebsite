@@ -10,7 +10,7 @@ import WebsiteTemplate from "@/templates/WebsiteTemplate";
 export default function Home() {
   return (
     <WebsiteTemplate
-      title="Best Dental Clinic in Kolkata | Dentity Dental"
+      title="Best Dental Clinic in Kolkata - Dentity Dental"
       description="Discover the best dental clinic in Kolkata at Dentity Dental. We provide advanced oral, dental, and facial treatments with state-of-the-art technology and expert dentists."
     >
       <Banner />

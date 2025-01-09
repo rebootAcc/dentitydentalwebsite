@@ -216,9 +216,12 @@ export default function Footer() {
               {[
                 { label: "Home", href: "/" },
                 { label: "About Us", href: "/about" },
-                { label: "Our Treatments", href: "/treatments/" },
+                { label: "Our Treatments", href: "/treatments/smile-design" },
                 { label: "Our Facilities", href: "/facilities" },
-                { label: "Our Clinics", href: "/clinics" },
+                {
+                  label: "Our Clinics",
+                  href: "/clinics/best-dental-clinic-in-gariahat",
+                },
                 { label: "Media", href: "/gallery" },
                 { label: "Awards", href: "/awards" },
                 { label: "Contact Us", href: "/contact-us" },
