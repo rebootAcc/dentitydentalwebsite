@@ -17,6 +17,8 @@ const clinics = [
     href: "/clinics/best-dental-clinic-in-gariahat",
     cover: "/clinics/dd-gariahat.jpg",
     navLabel: "Dentity Dental Gariahat",
+    instaLink: "https://www.instagram.com/dentitydentalgariahat1/",
+    fblink: "https://www.facebook.com/dentitydentalgariahat",
   },
   {
     metatitle: "Best dental clinic in Tollygunge Netaji Nagar",
@@ -37,6 +39,8 @@ const clinics = [
     href: "/clinics/best-dental-clinic-in-tollygunge-netajinagar",
     cover: "/clinics/dd-netajinagar.jpg",
     navLabel: "Dentity Dental Tollygunge Netaji Nagar",
+    instaLink: "#",
+    fblink: "https://www.facebook.com/dentitydentaltollygungenetajinagar",
   },
   {
     metatitle: "Best Dental Clinic in Tollygunge Suryanagar",
@@ -57,6 +61,8 @@ const clinics = [
     href: "/clinics/best-dental-clinic-in-tollygunge-suryanagar",
     cover: "/clinics/dd-surayanagar.jpg",
     navLabel: "Dentity Dental Tollygunge Suryanagar",
+    instaLink: "https://www.instagram.com/dentitydentaltollygunge/",
+    fblink: "https://www.facebook.com/dentitydentaltollygungesuryanagar",
   },
   {
     metatitle: "Best Dental clinic in Sonarpur ",
@@ -78,6 +84,8 @@ const clinics = [
     href: "/clinics/best-dental-clinic-in-sonarpur",
     cover: "/clinics/dd-sonarpur.jpg",
     navLabel: "Dentity Dental Sonarpur",
+    instaLink: "https://www.instagram.com/dentitydentalsonarpur/",
+    fblink: "https://www.facebook.com/dentitydentalsonarpur",
   },
   {
     metatitle: "Best Dental Clinic in Dumdum",
@@ -99,9 +107,11 @@ const clinics = [
     href: "/clinics/best-dental-clinic-in-dumdum",
     cover: "/clinics/dd-dum-dum-cantonment.jpg",
     navLabel: "Dentity Dental Dum Dum Cantonment",
+    instaLink: "https://www.instagram.com/dentitydentaldumdumcantonment/",
+    fblink: "https://www.facebook.com/dentitydentaldumdumcantonment",
   },
   {
-    metatitle: "Best Dental Clinic in Rajarhat Newtown",
+    metatitle: "Best Dental Clinic in Rajarhat Teghroia Newtown",
     metadescription:
       "Are you tired of searching for a great dental clinic near Newtown? Well your search ends here at Dentity Dental, a one stop destination in New Town for anything related to oral health. You might have seen mushrooming clinics all over the city, but very few among them has remained able then to earn the trust.",
     label:
@@ -119,7 +129,9 @@ const clinics = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4406.989783081928!2d88.437739!3d22.6208936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89f2598f9964d%3A0xd5bd75b67b459a2f!2sDentity%20Dental!5e1!3m2!1sen!2sin!4v1735020938147!5m2!1sen!2sin",
     href: "/clinics/best-dental-clinic-in-rajarhat-newtown",
     cover: "/clinics/dd-rajathat-newtown.jpg",
-    navLabel: "Dentity Dental Rajarhat Teghoria",
+    navLabel: "Dentity Dental Rajarhat Teghoria Newtown",
+    instaLink: "https://www.instagram.com/rajarhatdentitydental/",
+    fblink: "https://www.facebook.com/dentitydentalrajarhat",
   },
   {
     metatitle: "Best dental clinic in Teghoria",
@@ -141,6 +153,8 @@ const clinics = [
     href: "/clinics/best-dentalclinic-in-teghoria",
     cover: "/clinics/dd-teghoria.jpg",
     navLabel: "Dentity Dental Teghoria",
+    instaLink: "https://www.instagram.com/dentitydentalteghoria1/",
+    fblink: "https://www.facebook.com/dentitydentalteghoria",
   },
   {
     metatitle: "Best Dental Clinic in Beleghata",
@@ -161,6 +175,8 @@ const clinics = [
     href: "/clinics/best-dental-clinic-in-beleghata",
     cover: "/clinics/dd-beleghata.jpg",
     navLabel: "Dentity Dental Beleghata",
+    instaLink: "#",
+    fblink: "https://www.facebook.com/dentitydentalbeleghata/",
   },
   {
     metatitle: "Best Dentist in Midnapore",
@@ -181,6 +197,8 @@ const clinics = [
     href: "/clinics/best-dentist-in-midnapore",
     cover: "/clinics/dr-saikat-paul.jpg",
     navLabel: "Dr. Saikat Paul (Dental Mid World)",
+    instaLink: "#",
+    fblink: "https://www.facebook.com/dentalmidworlddrsaikatpaul",
   },
 ];
 
