@@ -16,11 +16,8 @@ export default function Treatments({
   const router = useRouter();
 
   return (
-    <WebsiteTemplate
-      title={metatitle}
-      description="Dentity Dental designed & developed by Reboot AI Private Limited"
-    >
-      <SubBanner heading="Treatment" />
+    <WebsiteTemplate title={metatitle} description={metadescription}>
+      <SubBanner heading={title} />
       <TreatMentAbout title={title} description={description} cover={cover} />
       <RelatedTreatment currentQuery={router.query.treatment} />
     </WebsiteTemplate>
@@ -45,9 +42,8 @@ export const getStaticProps = async ({ params }) => {
   const treatmentData = AllTreatments.reduce((acc, item) => {
     const key = item.href.split("/")[2];
     acc[key] = {
-      metatitle: `${item.label} treatment in Kolkata`,
-      metadescription:
-        "Looking for an experienced custom website development company to build a unique online presence with Reboot AI's Custom Website Development services.",
+      metatitle: item.metatitle,
+      metadescription: item.metadescription,
       title: item.label,
       description: item.desc,
       cover: item.cover,

@@ -1,24 +1,9 @@
-import dynamic from "next/dynamic";
 import Image from "next/image";
 
-// const Slider = dynamic(() => import("react-slick"), {
-//   ssr: false,
-// });
 export default function Banner() {
-  // const settings = {
-  //   infinite: true,
-  //   speed: 1000,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   fade: true,
-  //   arrows: false,
-  //   autoplaySpeed: 3000,
-  //   pauseOnHover: false,
-  // };
   const slides = [
     {
-      imageSrc: "/images/dd-slider.jpg",
+      imageSrc: "/images/dd-slider.avif",
     },
   ];
   return (

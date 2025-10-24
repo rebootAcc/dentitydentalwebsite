@@ -17,6 +17,8 @@ export default function Clinic({
   map,
   iframe,
   phone,
+  fblink,
+  instaLink,
 }) {
   const router = useRouter();
   return (
@@ -31,6 +33,8 @@ export default function Clinic({
         map={map}
         iframe={iframe}
         phone={phone}
+        fblink={fblink}
+        instaLink={instaLink}
       />
       <RelatedClinics currentQuery={router.query.clinic} />
     </WebsiteTemplate>
@@ -66,6 +70,8 @@ export const getStaticProps = async ({ params }) => {
       map: item.map,
       iframe: item.iframeSrc,
       phone: item.phone,
+      fblink: item.fblink,
+      instaLink: item.instaLink,
     };
     return acc;
   }, {});
@@ -94,6 +100,8 @@ export const getStaticProps = async ({ params }) => {
       map: data.map,
       iframe: data.iframe,
       phone: data.phone,
+      fblink: data.fblink,
+      instaLink: data.instaLink,
     },
   };
 };

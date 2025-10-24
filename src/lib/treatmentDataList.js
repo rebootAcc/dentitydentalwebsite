@@ -9,6 +9,9 @@ const treatments = [
       "/treatments/SMILE-DESIGNING-1.jpg",
       "/treatments/SMILE-DESIGNING-2.jpg",
     ],
+    metatitle: "Smile Designing Treatment in Kolkata | Dentity Dental",
+    metadescription:
+      "Get a beautiful, confident smile with Smile Designing at Dentity Dental, Kolkata. Our expert team blends art and science to create the perfect smile tailored to your needs.",
   },
   {
     label: "Root Canal",
@@ -20,6 +23,9 @@ const treatments = [
       "/treatments/ROOT-CANAL-TREATMENT-1.jpg",
       "/treatments/ROOT-CANAL-TREATMENT-2.jpg",
     ],
+    metatitle: "Root Canal Treatment in Kolkata | Dentity Dental",
+    metadescription:
+      "Experience pain-free root canal treatments at Dentity Dental, Kolkata. Our advanced techniques ensure healthy teeth and gums with minimal discomfort. Book your consultation now!",
   },
   {
     label: "Ultrasonic Scaling",
@@ -31,6 +37,9 @@ const treatments = [
       "/treatments/ULTRASONIC-SCALING-1.jpg",
       "/treatments/ULTRASONIC-SCALING-2.jpg",
     ],
+    metatitle: " Ultrasonic Scaling in Kolkata | Dentity Dental",
+    metadescription:
+      "Clean your teeth deeply with ultrasonic scaling at Dentity Dental, Kolkata. Our ultrasonic technology removes plaque and tartar buildup for healthier gums and a brighter smile.",
   },
   {
     label: "Removable Denture, Cast Partial Denture & Flexible Partial Denture",
@@ -43,6 +52,9 @@ const treatments = [
       "/treatments/REMOVABLE-DENTURE-CAST-PARTIAL-DENTURE-FLEXIBLE-PARTIAL-DENTURE-1.jpg",
       "/treatments/REMOVABLE-DENTURE-CAST-PARTIAL-DENTURE-FLEXIBLE-PARTIAL-DENTURE-2.jpg",
     ],
+    metatitle: "Removable & Flexible Dentures in Kolkata | Dentity Dental",
+    metadescription:
+      "Restore your smile and function with removable, cast partial, and flexible dentures at Dentity Dental, Kolkata. Our dentures offer comfort, durability, and a natural look.",
   },
   {
     label: "Crown/Capping & Fixed Bridge Works (Metal, PFM, Full Ceramic)",
@@ -51,6 +63,10 @@ const treatments = [
     imgsrc: "/treatments/CROWN-CAPPING-FIXED-BRIDGE-WORKS-1.jpg",
     desc: "When a tooth becomes fragile, endodontically treated, non-exposed but vital & grossly with structural loss, need cosmetic/esthetic improvement, needs shape modification- Crown/Capping are required. When there is one more tooth/teeth missing/lost & require fixed replacement the Fixed Bridge (FPD) is indicated. Depending upon the situation, medical condition, patient's choice different types of Crowns & Fixed Bridge are made.Our highly skilled team of Dentists fulfill such kind of patient's need using modern techniques.If your oral/ denta condition indicates such you can opt for this from any branch of Dentity Dental.",
     cover: ["/treatments/CROWN-CAPPING-FIXED-BRIDGE-WORKS-1.jpg"],
+    metatitle:
+      "Crown, Capping & Fixed Bridge Works in Kolkata | Dentity Dental",
+    metadescription:
+      "Get durable and aesthetic crowns, capping, and fixed bridge works (metal, PFM, full ceramic) at Dentity Dental, Kolkata. Enhance your smile with quality dental restorations.",
   },
   {
     label: "Whitening Of Teeth",
@@ -62,6 +78,9 @@ const treatments = [
       "/treatments/WHITENING-OF-TEETH-1.jpg",
       "/treatments/WHITENING-OF-TEETH-2.jpg",
     ],
+    metatitle: "Teeth Whitening in Kolkata | Dentity Dental",
+    metadescription:
+      "Achieve a brighter, whiter smile with professional teeth whitening at Dentity Dental, Kolkata. Our treatments are safe, effective, and tailored to your needs.",
   },
   {
     label: "Treatment Of Uneven Tooth",
@@ -73,6 +92,9 @@ const treatments = [
       "/treatments/TREATMENT-OF-UNEVEN-TOOTH-1.jpg",
       "/treatments/TREATMENT-OF-UNEVEN-TOOTH-2.jpg",
     ],
+    metatitle: "Treatment for Uneven Teeth in Kolkata | Dentity Dental",
+    metadescription:
+      " Get treatment for uneven teeth at Dentity Dental, Kolkata. Our expert dentists provide solutions to straighten and align your smile for a perfect, uniform appearance.",
   },
   {
     label: "Frenectomy & Frenuloplasty",
@@ -84,6 +106,9 @@ const treatments = [
       "/treatments/FRENECTOMY-FRENOPLASTY-1.jpg",
       "/treatments/FRENECTOMY-FRENOPLASTY-2.jpg",
     ],
+    metatitle: "Frenectomy & Frenuloplasty in Kolkata | Dentity Dental",
+    metadescription:
+      "Treat lip and tongue tie with Frenectomy and Frenuloplasty at Dentity Dental, Kolkata. Our specialists use advanced techniques for effective, painless treatment.",
   },
   {
     label: "Dental Implant",
@@ -96,6 +121,9 @@ const treatments = [
       "/treatments/DENTAL-IMPLANT-1.jpg",
       "/treatments/DENTAL-IMPLANT-2.jpg",
     ],
+    metatitle: "Dental Implant Treatment in Kolkata | Dentity Dental",
+    metadescription:
+      "Restore missing teeth with dental implants at Dentity Dental, Kolkata. Our experienced team provides long-lasting, natural-looking implants that improve your smile and oral health.",
   },
   {
     label: "Oral & Maxillofacial Surgery",
@@ -104,6 +132,9 @@ const treatments = [
     imgsrc: "/treatments/ORAL-MAXILLOFACIAL-SURGERY-1.jpg",
     desc: "This is highly specialized section which encompasses Dentofacial Surgery,Oral &Dental Surgery, Maxillofacial Surgery, Orthogna thik Surgery etc.If some individual get accidental traumatic injury to jaws, orofacial, orodental region his/her treatment & complete cure is assured in DENTITY DENTAL.If you want to improve your looks think kind of Cosmetic Oral & Maxillofacial Surgery & Orthognathic Surgery can do the miracle by our highly skilled & experienced Surgeons. So don't worry - if your situation indicates such kind of treatment just take your appointment /call us. We assure best treatment for you in comparatively least expense.",
     cover: ["/treatments/ORAL-MAXILLOFACIAL-SURGERY-1.jpg"],
+    metatitle: "Oral & Maxillofacial Surgery in Kolkata | Dentity Dental",
+    metadescription:
+      " Get expert oral and maxillofacial surgery at Dentity Dental, Kolkata. Our skilled surgeons provide effective treatments for complex dental and facial conditions.",
   },
   {
     label: "Oral Dental Preventive Services",
@@ -115,6 +146,9 @@ const treatments = [
       "/treatments/ORAL-DENTAL-PREVENTIVE-1.jpg",
       "/treatments/ORAL-DENTAL-PREVENTIVE-2.jpg",
     ],
+    metatitle: "Oral Preventive Services in Kolkata | Dentity Dental",
+    metadescription:
+      "Prevent dental issues with comprehensive oral preventive services at Dentity Dental, Kolkata. Our preventive treatments help maintain long-term oral health for all ages.",
   },
   {
     label: "Depigmentation Of Gums",
@@ -126,6 +160,9 @@ const treatments = [
       "/treatments/DEPIGMENTATION-OF-GUM-1.jpg",
       "/treatments/DEPIGMENTATION-OF-GUM-2.jpg",
     ],
+    metatitle: "Gum Depigmentation Treatment in Kolkata | Dentity Dental",
+    metadescription:
+      "Achieve a beautiful smile with gum depigmentation at Dentity Dental, Kolkata. Our experts use safe and effective techniques to restore your gums to a natural pink shade.",
   },
   {
     label: "Pediatric Dentistry",
@@ -134,6 +171,9 @@ const treatments = [
     imgsrc: "/treatments/PEDRIATIC-DENTISTRY.jpg",
     desc: "It is the DENTISTRY related to kids.Ideally parents should visit to the dentist after every six months when they know that their kid has their first tooth. Pedodontists take care of the oral health of kids and also suggest the parents how to take home care of child's oral & dental health.Well ,we all know that handling & managing kids is not an easy task,but we have very child-friendly doctors who can easily make friends with your kid to make them prepare to receive any kind of dental treatment.",
     cover: ["/treatments/PEDRIATIC-DENTISTRY.jpg"],
+    metatitle: "Pediatric Dentistry in Kolkata | Dentity Dental",
+    metadescription:
+      "Keep your child's teeth healthy with pediatric dentistry at Dentity Dental, Kolkata. Our child-friendly approach ensures a comfortable, positive experience for every visit.",
   },
   {
     label: "Piezoelectric Surgery",
@@ -142,6 +182,9 @@ const treatments = [
     imgsrc: "/treatments/PIEZOELECTRIC-SURGERY.jpg",
     desc: "It is a typical ultrasonic advanced precision surgical procedure which is minimally invasive & cut/remove the oral hard tissue (bone) with minimally interfering the overlying soft tissue.Any unwanted oral or maxillofacial bony structure removal,pathologically affected hard tissue removal,to remove the overlying bony coverage of impacted wisdom tooth surgery or surgical exposure of timely interrupted tooth and also in many other oral & maxillofacial surgical cases piezosurgery has taken an important role replacing the conventional surgical process.If the satisfaction with complete cure is your priority contact Dentity Dental &get your appointment.",
     cover: ["/treatments/PIEZOELECTRIC-SURGERY.jpg"],
+    metatitle: "Piezoelectric Surgery in Kolkata | Dentity Dental",
+    metadescription:
+      "Dentity Dental, Kolkata offers advanced piezoelectric surgery for precise, minimally invasive dental treatments. Improve your oral health with the latest technology in dental care.",
   },
   {
     label: "Dental Veneer & Thinner",
@@ -153,6 +196,9 @@ const treatments = [
       "/treatments/WHITENING-OF-TEETH-2.jpg",
       "/treatments/DENTAL-VENEER-THINEER.jpg",
     ],
+    metatitle: "Dental Veneers & Thinner in Kolkata | Dentity Dental",
+    metadescription:
+      "Enhance your smile with dental veneers and thinner at Dentity Dental, Kolkata. Our high-quality veneers provide a natural, beautiful finish for a flawless smile.",
   },
   {
     label: "Ethical Dentistry & Affordability",
@@ -164,6 +210,10 @@ const treatments = [
       "/treatments/DEPIGMENTATION-OF-GUM-1.jpg",
       "/treatments/DEPIGMENTATION-OF-GUM-2.jpg",
     ],
+    metatitle:
+      "Ethical Dentistry & Affordable Care in Kolkata | Dentity Dental",
+    metadescription:
+      "Dentity Dental offers ethical and affordable dental care in Kolkata. We focus on transparent, patient-centered treatments that ensure your oral health and well-being.",
   },
   {
     label: "Treatment Of All Kinds Of Oral And Dental Diseases",
@@ -175,6 +225,9 @@ const treatments = [
       "/treatments/TREATMENT-ALL-KINDS-ORAL-DENTAL-DISEASES-1.jpg",
       "/treatments/TREATMENT-ALL-KINDS-ORAL-DENTAL-DISEASES-2.jpg",
     ],
+    metatitle: "Oral & Dental Disease Treatment in Kolkata | Dentity Dental",
+    metadescription:
+      "Dentity Dental, Kolkata, provides expert treatment for all kinds of oral and dental diseases. Our comprehensive care ensures your oral health is in the best hands.",
   },
   {
     label: "Tumor, Cyst Surgery & Treatment Of Jaw Fracture",
@@ -186,6 +239,10 @@ const treatments = [
       "/treatments/TUMOR-CYST-SURGERY-TREATMENT-OF-JAW-FRACTURE-1.jpg",
       "/treatments/TUMOR-CYST-SURGERY-TREATMENT-OF-JAW-FRACTURE-2.jpg",
     ],
+    metatitle:
+      "Tumor & Cyst Surgery in Kolkata | Jaw Fracture Treatment | Dentity Dental",
+    metadescription:
+      "Get expert tumor and cyst surgery and jaw fracture treatment at Dentity Dental, Kolkata. Our specialists provide effective solutions for complex oral health issues.",
   },
   {
     label: "Oral Prophylaxis, Tooth Care",
@@ -194,6 +251,9 @@ const treatments = [
     imgsrc: "/treatments/ORAL-PROPHYLAXIS-TOOTH-CARE-1.jpg",
     desc: "Oral & Dental prophylaxis is a preventive & curative procedure where teeth are cleaned to remove plaque, calculus (tartar),stain which contain bacteria.This process ultimately secure the oral health.So everyone should be under regular oral &dental health check up.",
     cover: ["/treatments/ORAL-PROPHYLAXIS-TOOTH-CARE-1.jpg"],
+    metatitle: "Oral Prophylaxis & Tooth Care in Kolkata | Dentity Dental",
+    metadescription:
+      "Maintain your dental health with oral prophylaxis and tooth care at Dentity Dental, Kolkata. Our professional cleanings and check-ups help keep your smile healthy and bright.",
   },
   {
     label: "Maxillofacial Prosthesis",
@@ -202,6 +262,9 @@ const treatments = [
     imgsrc: "/images/serviceimg.png",
     desc: "Lorem ipsum dolor sit amet consectetur. Tristique ac pretium elementum viverra. A suspendisse tristique magna gravida mattis. Quam eros nam.",
     cover: [""],
+    metatitle: "Maxillofacial Prosthesis in Kolkata | Dentity Dental",
+    metadescription:
+      "Restore facial appearance with maxillofacial prosthesis at Dentity Dental, Kolkata. Our expert team provides custom prosthetics to improve quality of life after injury or surgery.",
   },
   {
     label: "Wisdom Tooth Surgery",
@@ -210,6 +273,9 @@ const treatments = [
     imgsrc: "/treatments/WISDOM-TOOTH-SURGERY-1.jpg",
     desc: "The wisdom tooth or third molar tooth are normally four in number (one in each quadrant of oral cavity) and usually errupt/come in the oral cavity by 18yrs to 22 yrs of age.If somehow the wisdom tooth doesn't erupt timely,remain completely or partially embedded/impacted within the jaw bone or errupt in abnormal position may leads to pericoronitis and trauma to the adjacent oral mucosa. In this kind of situation the patient suffers from lots of pain & sometime it may leads to fascial space infection, swelling,trismus and many more. If someone suffers from this kind of problem it is essential to remove the wisdom tooth surgically.This kind of surgery needs well experienced expert dental surgeon.So contact us & get your appointment soon from us if you are suffering from this kind of pain.",
     cover: ["/treatments/WISDOM-TOOTH-SURGERY-1.jpg"],
+    metatitle: "Wisdom Tooth Surgery in Kolkata | Dentity Dental",
+    metadescription:
+      "Get safe and effective wisdom tooth surgery at Dentity Dental, Kolkata. Our expert surgeons provide painless extractions and ensure a smooth recovery process.",
   },
   {
     label: "Painless Tooth Extraction",
@@ -221,6 +287,9 @@ const treatments = [
       "/treatments/ROOT-CANAL-TREATMENT-2.jpg",
       "/treatments/PAINLESS-TOOTH-EXTRACTION.jpg",
     ],
+    metatitle: "Painless Tooth Extraction in Kolkata | Dentity Dental",
+    metadescription:
+      "Experience painless tooth extraction at Dentity Dental, Kolkata. Our advanced techniques ensure a comfortable and stress-free extraction process with minimal discomfort.",
   },
   {
     label: "Laser Surgery",
@@ -232,6 +301,9 @@ const treatments = [
       "/treatments/LASER-SURGERY-1.jpg",
       "/treatments/LASER-SURGERY-2.jpg",
     ],
+    metatitle: "Laser Surgery in Kolkata | Dentity Dental",
+    metadescription:
+      "Dentity Dental, Kolkata offers advanced laser surgery for a variety of dental treatments. Our laser technology ensures precision, minimal discomfort, and faster recovery.",
   },
   {
     label: "Micro Surgery",
@@ -243,6 +315,9 @@ const treatments = [
       "/treatments/MICRO-SURGERY.jpg",
       "/treatments/REMOVABLE-DENTURE-CAST-PARTIAL-DENTURE-FLEXIBLE-PARTIAL-DENTURE-1.jpg",
     ],
+    metatitle: "Micro Surgery in Kolkata | Dentity Dental",
+    metadescription:
+      "Experience minimally invasive micro surgery at Dentity Dental, Kolkata. Our skilled team uses the latest techniques to treat dental conditions with precision and minimal recovery time.",
   },
   {
     label: "Electro Surgery",
@@ -254,6 +329,9 @@ const treatments = [
       "/treatments/ELECTRO-SURGERY-1.jpg",
       "/treatments/ELECTRO-SURGERY-2.jpg",
     ],
+    metatitle: "Electro Surgery in Kolkata | Dentity Dental",
+    metadescription:
+      "Dentity Dental, Kolkata offers advanced electro surgery for effective and minimally invasive dental treatments. Book your consultation for precision dental care today.",
   },
   {
     label: "Surgical Exposure of Impacted/Timely Non-Erupted Front Tooth/Teeth",
@@ -265,6 +343,10 @@ const treatments = [
       "/treatments/SURGICAL-EXPOSURE-IMPACTED-1.jpg",
       "/treatments/SURGICAL-EXPOSURE-IMPACTED-2.jpg",
     ],
+    metatitle:
+      "Surgical Exposure of Impacted Teeth in Kolkata | Dentity Dental",
+    metadescription:
+      "Dentity Dental offers surgical exposure of impacted and non-erupted teeth in Kolkata. Our skilled surgeons ensure a successful procedure with minimal discomfort and quick recovery.",
   },
   {
     label: "Autoclave",
@@ -273,6 +355,9 @@ const treatments = [
     imgsrc: "/treatments/AUTOCLAVE.jpg",
     desc: "Autoclave is a machine used to sterilise any object in steam at a particular pressure. It kills all kinds of microbes from any object used in dentistry . We use Autoclave to ensure sterility of any object before using it in patient's mouth.",
     cover: ["/treatments/AUTOCLAVE.jpg"],
+    metatitle: "Autoclave Sterilization in Kolkata | Dentity Dental",
+    metadescription:
+      "Dentity Dental ensures the highest standards of hygiene with autoclave sterilization for all dental instruments. Trust us for safe, clean, and effective dental treatments.",
   },
   {
     label: "Portable Dental X-Ray Machine",
@@ -284,6 +369,9 @@ const treatments = [
       "/treatments/PORTABLE-DENTAL-X-RAY-MACHINE-1.jpg",
       "/treatments/PORTABLE-DENTAL-X-RAY-MACHINE-2.jpg",
     ],
+    metatitle: "Portable Dental X-Ray in Kolkata | Dentity Dental",
+    metadescription:
+      "Get quick and accurate dental imaging with our portable dental X-ray machines at Dentity Dental, Kolkata. We ensure the highest quality diagnostics for effective treatment planning.",
   },
   {
     label: "Cosmetic Intraoral Surgery",
@@ -295,6 +383,9 @@ const treatments = [
       "/treatments/COSMETIC-INTRAORAL-SURGERY-1.jpg",
       "/treatments/COSMETIC-INTRAORAL-SURGERY-2.jpg",
     ],
+    metatitle: "Cosmetic Intraoral Surgery in Kolkata | Dentity Dental",
+    metadescription:
+      "Enhance your smile with cosmetic intraoral surgery at Dentity Dental, Kolkata. Our specialists provide safe and effective procedures to improve your oral aesthetics.",
   },
   {
     label: "Gum Surgery & Periodontal Surgery",
@@ -306,6 +397,9 @@ const treatments = [
       "/treatments/GUM-SURGERY-PERIODONTAL-SURGERY-1.jpg",
       "/treatments/GUM-SURGERY-PERIODONTAL-SURGERY-2.jpg",
     ],
+    metatitle: "Gum Surgery & Periodontal Surgery in Kolkata | Dentity Dental",
+    metadescription:
+      "Get advanced gum and periodontal surgery at Dentity Dental, Kolkata. Our experts offer comprehensive treatment for gum disease and related dental conditions.",
   },
   {
     label: "Correction of Gaps/Spaces Between Teeth",
@@ -314,6 +408,9 @@ const treatments = [
     imgsrc: "/treatments/CORRECTION-GAPS.jpg",
     desc: "This kind of abnormality hampers patient's looks.In case of children this kind of spacing may be physiological & self corrective.In adults this can be corrected Orthodontically, Cosmetically or in a combined way.Cosmetic correction includes direct & indirect composites, composite & ceramic veneers, crowns etc.Our team of specialist Doctors are always there to prove their efficiency. If your smile is hampered by abnormal interdental spacing just get your appointment from Dentity Dental as early as possible.",
     cover: ["/treatments/CORRECTION-GAPS.jpg"],
+    metatitle: "Teeth Gap Treatment in Kolkata | Dentity Dental",
+    metadescription:
+      "Close gaps between your teeth with expert treatments at Dentity Dental, Kolkata. We offer effective solutions to correct uneven spaces and enhance your smile.",
   },
   {
     label: "Orofacial Physiotherapy",
@@ -322,6 +419,9 @@ const treatments = [
     imgsrc: "/treatments/OROFACIAL-PHYSIOTHERAPY.jpg",
     desc: "It is required in case of TMD(Temporomandibular dysfunction- previously termed as orofacial pain dysfunction syndrome)or trismus of jaw muscles etc.Proper diagnosis kind of disease is more important than treatment procedure.The diagnostic process includes various subjective and objective symptoms from bidigital palpation to pain in jaw & various others associated muscles.The treatment procedure include physiotherapy of orofacial muscles ,contrast therapy & even use of soft or hard bite guard.We have extremely specialized team of this kind of treatment.So if you are constantly & chronically suffering from this kind problem ,just consult with us to get rid of.",
     cover: ["/treatments/OROFACIAL-PHYSIOTHERAPY.jpg"],
+    metatitle: "Orofacial Physiotherapy in Kolkata | Dentity Dental",
+    metadescription:
+      "Dentity Dental offers specialized orofacial physiotherapy in Kolkata for improving facial mobility, relieving pain, and restoring function after dental treatments or surgeries.",
   },
   {
     label: "Dental Jewellery",
@@ -333,6 +433,9 @@ const treatments = [
       "/treatments/DENTAL-JEWELLERY-1.jpg",
       "/treatments/DENTAL-JEWELLERY-2.jpg",
     ],
+    metatitle: "Dental Jewellery in Kolkata | Dentity Dental",
+    metadescription:
+      "Add sparkle to your smile with dental jewellery at Dentity Dental, Kolkata. Our expert team offers customized, safe, and beautiful options to enhance your teeth's appearance.",
   },
   {
     label: "Invisalign",
@@ -341,6 +444,9 @@ const treatments = [
     imgsrc: "/treatments/INVISALIGN-1.jpg",
     desc: "This very advance mode of Orthodontic/tooth alignment technique in braceless way with the help of clear/transparent , smooth surfaced device which is more comfortable to the patient.Though a bit more expensive & not indicated for all kinds of orthodontic correction, when indicated it is the best way of malaligned teeth correction when patient's compliance & esthetic during treatment is concerned.",
     cover: ["/treatments/INVISALIGN-1.jpg", "/treatments/INVISALIGN-2.jpg"],
+    metatitle: "Invisalign Treatment in Kolkata | Dentity Dental",
+    metadescription:
+      "Achieve a straighter smile with Invisalign treatment at Dentity Dental, Kolkata. Our clear aligners are a comfortable and discreet alternative to traditional braces.",
   },
   {
     label: "Tooth Vitality Test",
@@ -352,6 +458,9 @@ const treatments = [
       "/treatments/TOOTH-VITALITY-TEST-1.jpg",
       "/treatments/TOOTH-VITALITY-TEST-2.jpg",
     ],
+    metatitle: "Tooth Vitality Test in Kolkata | Dentity Dental",
+    metadescription:
+      "Ensure your tooth health with a tooth vitality test at Dentity Dental, Kolkata. Our test helps detect early signs of dental problems and preserve your oral health.",
   },
   {
     label: "Dental Lab Work",
@@ -363,6 +472,9 @@ const treatments = [
       "/treatments/DENTAL-LAB-WORK-1.jpg",
       "/treatments/DENTAL-LAB-WORK-2.jpg",
     ],
+    metatitle: "Dental Lab Work in Kolkata | Dentity Dental",
+    metadescription:
+      "Get high-quality dental lab work at Dentity Dental, Kolkata. Our in-house lab ensures precision in dental restorations, from crowns to dentures and more.",
   },
   {
     label: "Treatment of Fractured, Broken Tooth",
@@ -374,6 +486,9 @@ const treatments = [
       "/treatments/TREATMENT-FRACTURED-BROKEN-TOOTH-1.jpg",
       "/treatments/TREATMENT-FRACTURED-BROKEN-TOOTH-2.jpg",
     ],
+    metatitle: "Fractured Tooth Treatment in Kolkata | Dentity Dental",
+    metadescription:
+      " Dentity Dental offers expert treatment for fractured and broken teeth in Kolkata. Our advanced techniques ensure a restored, functional, and aesthetic smile.",
   },
   {
     label: "Geriatric Dentistry",
@@ -382,6 +497,9 @@ const treatments = [
     imgsrc: "/treatments/GERIATRIC-DENTISTRY-1.jpg",
     desc: "It is the branch of dentistry that provide preventive & curative dental treatment of older or extremely older patients.Usually that age group of people suffer from compromised general physical (& sometime mental )health, poor oral health, nutritional deficiency , restricted day to day activities.Sometime they even can't maintain their oral hygiene properly.In our Dentity Dental our specialist Doctors treat the geriatric patients with utmost care &extreme patience so that their oral health is improved which ultimately results improvement of general health as we all know that oral health is the mirror of our general health",
     cover: ["/treatments/GERIATRIC-DENTISTRY-1.jpg"],
+    metatitle: "Geriatric Dentistry in Kolkata | Dentity Dental",
+    metadescription:
+      " Dentity Dental provides specialized geriatric dentistry in Kolkata. We offer compassionate care and tailored treatments for seniors to maintain optimal oral health.",
   },
   {
     label: "Apicoectomy Surgery",
@@ -393,6 +511,9 @@ const treatments = [
       "/treatments/APISECTOMY-SURGERY-1.jpg",
       "/treatments/APISECTOMY-SURGERY-2.jpg",
     ],
+    metatitle: "Apicoectomy Surgery in Kolkata | Dentity Dental",
+    metadescription:
+      "Dentity Dental offers apicoectomy surgery in Kolkata for patients with persistent dental infections. Our skilled team ensures a safe, effective procedure for better dental health.",
   },
   {
     label: "Artificial Teeth",
@@ -404,6 +525,9 @@ const treatments = [
       "/treatments/ARTIFICIAL-TEETH-1.jpg",
       "/treatments/ARTIFICIAL-TEETH-2.jpg",
     ],
+    metatitle: "Artificial Teeth Treatment in Kolkata | Dentity Dental",
+    metadescription:
+      "Restore your smile with artificial teeth treatment at Dentity Dental, Kolkata. Our solutions include dentures, implants, and bridges for a natural and functional look.",
   },
 ];
 

@@ -1,11 +1,9 @@
-import dynamic from "next/dynamic";
 import BlogCard from "../blogs/BlogCard";
 import { useEffect, useState } from "react";
 import { Blogs } from "@/lib/blogDataList";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
-const Slider = dynamic(() => import("react-slick/lib/slider"), {
-  ssr: false,
-});
 export default function HomeBlogList() {
   const [slidesToShow, setSlidesToShow] = useState(3);
   const [autoslide, setAutoslide] = useState(false);
@@ -42,15 +40,6 @@ export default function HomeBlogList() {
     };
   }, []);
 
-  const settings = {
-    infinite: Blogs.length > slidesToShow,
-    slidesToShow: slidesToShow,
-    slidesToScroll: 1,
-    autoplay: autoslide,
-    speed: 5000,
-    autoplaySpeed: 2000,
-    arrows: false,
-  };
   return (
     <div className="flex flex-col gap-8 xl:p-16 lg:p-8 p-4 ">
       <section className="flex flex-col gap-1 lg:gap-2">
@@ -66,18 +55,21 @@ export default function HomeBlogList() {
       </section>
 
       <div className="w-full">
-        <Slider {...settings}>
-          {Blogs.map((blog, index) => (
-            <div
-              key={index}
-              className="!flex w-full justify-center items-center"
-            >
-              <div className="w-[95%] cursor-pointer">
-                <BlogCard blog={blog} />
-              </div>
-            </div>
+        <Swiper
+          spaceBetween={5}
+          slidesPerView={slidesToShow}
+          autoplay={
+            autoslide ? { delay: 3000, disableOnInteraction: false } : false
+          }
+          loop={true}
+          modules={[Autoplay]}
+        >
+          {Blogs.slice(0, 8).map((blog, index) => (
+            <SwiperSlide key={index} className="p-2">
+              <BlogCard blog={blog} />
+            </SwiperSlide>
           ))}
-        </Slider>
+        </Swiper>
       </div>
     </div>
   );
