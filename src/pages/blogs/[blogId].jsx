@@ -21,7 +21,7 @@ export default function BlogDetails({
             <h1 className="text-3xl font-medium text-site-main">{title}</h1>
             <Image
               src={cover}
-              alt="blog-cover"
+              alt={title}
               width={2400}
               height={1600}
               className="w-full md:h-[25rem] object-contain rounded-lg"
@@ -65,8 +65,8 @@ export const getStaticProps = async ({ params }) => {
   const treatmentData = Blogs.reduce((acc, item) => {
     const key = item.href.split("/")[2];
     acc[key] = {
-      metatitle: `${item.heading}`,
-      metadescription: item.description,
+      metatitle: item.metatitle,
+      metadescription: item.metadescription,
       title: item.heading,
       description: item.blogDescription,
       cover: item.img,

@@ -12,16 +12,16 @@ export default function HomeEnquiry() {
         style={{ height: `${contentHeight}px` }}
       >
         <Image
-          src="/images/dd-toi-article.jpg"
-          alt="enquiry"
+          src="/images/dd-toi-article.avif"
+          alt="times of india article"
           width={636}
           height={540}
           className="w-full h-full object-cover rounded-md blur-[2px]"
         />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <Image
-            src="/images/newspaper-cut-out.jpeg"
-            alt="enquiry"
+            src="/images/newspaper-cut-out.avif"
+            alt="times of india article 2"
             width={540}
             height={540}
             className="object-cover w-full"

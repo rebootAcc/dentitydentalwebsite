@@ -108,7 +108,7 @@ export default function ClinicDetails({
           </div>
           <Image
             src={cover}
-            alt="treatment-2"
+            alt={title}
             width={373}
             height={144}
             className="flex-1"

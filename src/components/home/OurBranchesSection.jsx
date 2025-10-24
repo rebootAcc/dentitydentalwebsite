@@ -1,26 +1,23 @@
-import dynamic from "next/dynamic";
 import React from "react";
 import { useEffect, useState } from "react";
 import BranchServiceCard from "../global/BranchServiceCard";
 import { Clinic } from "@/lib/clinicsDataList";
-
-const Slider = dynamic(() => import("react-slick"), {
-  ssr: false,
-});
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 const OurBranchesSection = () => {
   const [slidesToShow, setSlidesToShow] = useState(4);
-  const [autoplaymode, setAutoplayMode] = useState(true);
+  const [autoplay, setAutoplayMode] = useState(true);
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 260) {
         setSlidesToShow(1);
         setAutoplayMode(true);
       } else if (window.innerWidth <= 600) {
-        setSlidesToShow(2);
+        setSlidesToShow(1);
         setAutoplayMode(true);
       } else if (window.innerWidth <= 860) {
-        setSlidesToShow(3);
+        setSlidesToShow(2);
         setAutoplayMode(true);
       } else if (window.innerWidth <= 1024) {
         setSlidesToShow(3);
@@ -29,7 +26,7 @@ const OurBranchesSection = () => {
         setSlidesToShow(3);
         setAutoplayMode(true);
       } else {
-        setSlidesToShow(4);
+        setSlidesToShow(3);
         setAutoplayMode(true);
       }
     };
@@ -42,18 +39,7 @@ const OurBranchesSection = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  const settings = {
-    infinite: true,
-    slidesToShow: slidesToShow,
-    slidesToScroll: 1,
-    autoplay: autoplaymode,
-    speed: 6000,
-    autoplaySpeed: 500,
-    arrows: false,
-    centerPadding: "60px",
-    lazyLoad: "ondemand",
-    adaptiveHeight: true,
-  };
+
   const clinics = Clinic.map((item) => ({
     imgsrc: item.cover,
     label: item.label,
@@ -75,13 +61,21 @@ const OurBranchesSection = () => {
         </p>
       </section>
       <section className="w-full">
-        <Slider {...settings}>
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={slidesToShow}
+          autoplay={
+            autoplay ? { delay: 3000, disableOnInteraction: false } : false
+          }
+          loop={true}
+          modules={[Autoplay]}
+        >
           {clinics.map((item, index) => (
-            <div key={index} className="xl:px-3 px-2 h-full">
+            <SwiperSlide key={index} className="xl:px-3 px-2 h-full">
               <BranchServiceCard content={item} />
-            </div>
+            </SwiperSlide>
           ))}
-        </Slider>
+        </Swiper>
       </section>
     </section>
   );

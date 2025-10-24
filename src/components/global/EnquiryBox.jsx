@@ -39,7 +39,7 @@ export default function EnquiryBox() {
       <div
         className="absolute inset-0 bg-cover bg-center rounded-md"
         style={{
-          backgroundImage: "url('/background/footer-bg.png')",
+          backgroundImage: "url('/images/footer-bg.avif')",
         }}
       ></div>
 

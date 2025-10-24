@@ -41,7 +41,7 @@ const AboutSection = () => {
         >
           <section className="flex flex-col gap-3 h-[50%]">
             <Image
-              src={"/images/toi-about.jpg"}
+              src={"/images/toi-about.avif"}
               alt="about us"
               height={648}
               width={801}
@@ -53,14 +53,14 @@ const AboutSection = () => {
           </section>
           <section className="h-[50%] flex flex-col gap-2">
             <Image
-              src={"/images/gov-about.jpg"}
+              src={"/images/gov-about.avif"}
               alt="about us"
               height={450}
               width={789}
               className=" w-full rounded-sm h-[49%] object-cover"
             />
             <Image
-              src={"/images/gov2-about.jpg"}
+              src={"/images/gov2-about.avif"}
               alt="about us"
               height={450}
               width={789}

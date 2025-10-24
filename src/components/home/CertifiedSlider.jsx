@@ -1,54 +1,45 @@
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-
-const Slider = dynamic(() => import("react-slick"), {
-  ssr: false,
-});
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function CertifiedSlider() {
   const [slidesToShow, setSlidesToShow] = useState(4);
-  const [autoplaymode, setAutoplayMode] = useState(true);
+  const [autoplay, setAutoplay] = useState(true);
+
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 260) {
+      if (window.innerWidth <= 350) {
+        setSlidesToShow(1);
+        setAutoplay(true);
+      } else if (window.innerWidth <= 460) {
         setSlidesToShow(2);
-        setAutoplayMode(false);
-      } else if (window.innerWidth <= 600) {
-        setSlidesToShow(2);
-        setAutoplayMode(false);
-      } else if (window.innerWidth <= 768) {
+        setAutoplay(true);
+      } else if (window.innerWidth <= 860) {
         setSlidesToShow(3);
-        setAutoplayMode(false);
-      } else if (window.innerWidth <= 1000) {
+        setAutoplay(true);
+      } else if (window.innerWidth <= 1224) {
+        setSlidesToShow(3);
+        setAutoplay(true);
+      } else if (window.innerWidth <= 1380) {
         setSlidesToShow(4);
-        setAutoplayMode(false);
+        setAutoplay(true);
+      } else if (window.innerWidth <= 1780) {
+        setSlidesToShow(4);
+        setAutoplay(true);
       } else {
         setSlidesToShow(4);
-        setAutoplayMode(false);
+        setAutoplay(true);
       }
     };
 
     window.addEventListener("resize", handleResize);
-
     handleResize();
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  const settings = {
-    infinite: true,
-    slidesToShow: slidesToShow,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 6000,
-    autoplaySpeed: 500,
-    arrows: false,
-    centerPadding: "60px",
-    lazyLoad: "ondemand",
-    adaptiveHeight: true,
-  };
 
   const experience = [
     { icon: "/acknowledgement/iso-globe.svg", name: "ISO 9001:2015 Certified" },
@@ -72,16 +63,22 @@ export default function CertifiedSlider() {
 
   return (
     <div className="w-full xl:p-16 lg:p-8 p-4">
-      <Slider
-        {...settings}
+      <Swiper
+        spaceBetween={10}
+        slidesPerView={slidesToShow}
+        autoplay={
+          autoplay ? { delay: 3000, disableOnInteraction: false } : false
+        }
+        loop={true}
+        modules={[Autoplay]}
         className="rounded-l-full rounded-r-full overflow-hidden"
       >
         {experience.map((item, index) => (
-          <section
+          <SwiperSlide
             key={index}
             className="w-full !flex justify-center items-center "
           >
-            <div className="w-[95%] flex flex-col gap-2  justify-center items-center bg-site-gray h-[6rem] md:h-[8rem] lg:h-40">
+            <div className="w-full flex flex-col gap-2  justify-center items-center bg-site-gray h-[6rem] md:h-[8rem] lg:h-40">
               <section className="w-full h-[2rem] md:h-[4rem] relative ">
                 <Image
                   src={item.icon}
@@ -94,9 +91,9 @@ export default function CertifiedSlider() {
                 {item.name}
               </h1>
             </div>
-          </section>
+          </SwiperSlide>
         ))}
-      </Slider>
+      </Swiper>
     </div>
   );
 }

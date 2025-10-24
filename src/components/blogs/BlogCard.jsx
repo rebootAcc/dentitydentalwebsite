@@ -9,7 +9,7 @@ export default function BlogCard({ blog }) {
   }
   return (
     <div
-      className="bg-white shadow-custom p-4 h-full flex flex-col w-full gap-3 my-4"
+      className="bg-white shadow-custom p-4 h-full flex flex-col w-full gap-3 my-4 rounded-md"
       onClick={() => handelRedirect(blog.href)}
     >
       <div>
@@ -17,8 +17,8 @@ export default function BlogCard({ blog }) {
           <Image
             fill
             src={blog.img}
-            alt="blog cover"
-            className="object-cover !h-[15rem]"
+            alt={blog.heading}
+            className="object-cover !h-[15rem] rounded-md"
           />
         </div>
       </div>
