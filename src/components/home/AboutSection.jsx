@@ -23,7 +23,7 @@ const AboutSection = () => {
 
   const aboutcontent = [
     {
-      heading: "Most Affordable Dental  Clinic In Kolkata",
+      heading: "Best Dental  Clinic In Kolkata - Dentity Dental",
       text: "Dentity Dental Is an ISO Certified Brand & Awarded by the Governor of West Bengal. Multiple times, this brand has ranked in the number 1 position according to the Times of India Health Survey. Dentity Dental Is the Best & Affordable Multi-speciality Chain Dental Clinic, which provides all kinds of Oral, Dental & Facial Treatments in a Highly Expertised Way.Every Tooth in a Person Is More Valuable Than a Diamond. <br/> <br/> Smile is the first thing people notice when they meet one another. Smile is something that can change the world. So in our Dentity Dental Clinics, we create a confident smile for you. We the Dentity Dental – a chain of multispeciality Dental Clinics in Kolkata (Tollygunge Netajinagar, Tollyhunge Suryanagar, Sonarpur, Dumdum Cantonment, VIP Road Teghoria, Rajarhat-Teghoria-Newtown-Chinapark, Gariahat, Beleghata) & various places of West Bengal (Dental Mid World, Midnapur) already served an uncountable number of happy patients with our ultramodern equipment, latest advanced technology, and most importantly, highly skilled specialist dentists.",
     },
     {
@@ -77,10 +77,10 @@ const AboutSection = () => {
               <h1 className="text-site-main text-xl lg:text-2xl xlg:text-3xl font-semibold">
                 {item.heading}
               </h1>
-              <p
+              <section
                 className="text-site-typo text-sm lg:text-sm/[21px] xlg:text-base/[26px]"
                 dangerouslySetInnerHTML={{ __html: item.text }}
-              ></p>
+              ></section>
             </div>
           ))}
         </section>
@@ -88,12 +88,13 @@ const AboutSection = () => {
       <section className="flex flex-col md:flex-row gap-4 xlg:gap-8">
         <section className="lg:w-[50%] w-full">
           <p className="lg:text-base xlg:text-[17px]/[25px] md:text-sm text-site-typo text-xs/[17px]">
-            Dr. Saikat Paul (Consultant Oral, Dental Surgeon & Maxillofacial
-            Prosthodontist Founder cum Owner of Dentity Dental (150 certified,
-            Best multispeciality dental chain clinic in Kolkata & West Bengal as
-            per Times Of India Health Survey) Receiving Award from honourable
-            governor (Shri C.V. Ananda Bose) of West Bengal for professional and
-            academic excellance in Health Care Sector.
+            Dr. Saikat Paul &#40;Consultant Oral, Dental Surgeon & Maxillofacial
+            Prosthodontist Founder cum Owner of Dentity Dental &#40;ISO
+            certified, Best multispeciality dental chain clinic in Kolkata &
+            West Bengal as per Times Of India Health Survey&#41; Receiving Award
+            from honourable governor &#40;Shri C.V. Ananda Bose&#41; of West
+            Bengal for professional and academic excellance in Health Care
+            Sector.
           </p>
         </section>
         <section className="lg:w-[50%] w-full">

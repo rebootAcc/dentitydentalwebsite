@@ -31,7 +31,7 @@ const CallWithUs = () => {
 
   return (
     <div
-      className={`fixed bottom-3 p-2 flex z-[100] right-0 justify-between w-fit items-end transition-opacity  ${
+      className={`fixed bottom-3 p-2 hidden md:flex z-[100] right-0 justify-between w-fit items-end transition-opacity  ${
         isVisible ? "opacity-100" : "opacity-0 slidefromright"
       }`}
     >
